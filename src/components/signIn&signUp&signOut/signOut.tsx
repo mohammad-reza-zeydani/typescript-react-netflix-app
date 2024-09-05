@@ -3,10 +3,8 @@ import { TData } from "../../types/types";
 import Loading from "../loading/Loading";
 import useGetSignedInUsers from "../../hooks/useGetSignedInUsers";
 import useSignOutUser from "../../hooks/useSignOutUser";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const SignOUt = () => {
-    const [userError,setUserError]=useState<boolean>(false)
     const navigate=useNavigate()
     const {data,isError,error,isLoading}=useGetSignedInUsers()
     const {mutate}=useSignOutUser()
@@ -17,19 +15,14 @@ const SignOUt = () => {
         if(exist){
             mutate(exist.id)
             localStorage.removeItem("token")
-            setUserError(false),
             navigate("/",{replace:true})
         }else{
-            setUserError(true)
-         setTimeout(() => {
-            setUserError(false)
-         },5000);
+            alert("User Not Found,The Email or Password Might Be Wrong")
         }
     }
     return ( 
         <form onSubmit={handleSubmit(submit)} className="flex flex-col pb-3 items-center justify-center gap-y-7 text-white mt-32 ">
             {isError && <h1 className=" absolute text-xl p-2 sm:text-2xl bg-red-500 animate-pulse top-10">{error?.message}</h1>}
-            {userError && <h1 className="text-lg bg-red-700 p-3">User Not Found,The Email or Password Might Be Wrong</h1>}
             {isLoading && <Loading/>}
             <h2 className="text-xl xs:text-3xl">Sign Out Your Account</h2>
         <div className="flex flex-col gap-y-4 justify-center items-start w-full px-2 xs:w-1/2 child:w-full child:input child:py-3 child:px-2">

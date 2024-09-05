@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import img from "../../assets/images/netflix-header.jpg"
 import usePostUser from "../../hooks/usePostUser";
 import { TData } from "../../types/types";
 import { useNavigate } from "react-router-dom";
