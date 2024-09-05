@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+@layer components{
+  .w-size{
+    @apply  w-[95%] sm:w-[90%] lg:w-5/6
+  }
+  .input {
+    @apply bg-neutral-600 border border-neutral-500 outline-none focus:outline-white rounded-md 
+  }
+  .active-btn{
+    @apply active:bg-blue-500
+  }
+}
+@layer base {
+  a{
+    @apply block pt-2 text-base lg:text-lg active:text-neutral-800
+  };
+}
