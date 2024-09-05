@@ -4,7 +4,7 @@ import SignUp from "./components/signIn&signUp&signOut/signUp"
 import SignOUt from "./components/signIn&signUp&signOut/signOut"
 import { Route,Routes } from "react-router-dom"
 import Footer from "./components/Home/footer/footer"
-import NetFlix from "./components/netflix/netflix"
+import NetFlixDashBoard from "./components/netflix/netflix"
 function App() {
   return (
     <>
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/sign_up" element={<SignUp/>}/>
         <Route path="/sign_in" element={<SignIn/>}/>
-        <Route path="/netflix" element={<NetFlix/>}/>
+        <Route path="/netflix" element={<NetFlixDashBoard/>}/>
         <Route path="/sign_out" element={<SignOUt/>}/>
       </Routes>
       <Footer/>
