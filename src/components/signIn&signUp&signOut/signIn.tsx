@@ -4,8 +4,10 @@ import useSignInUser from "../../hooks/useSignInUser";
 import { TData } from "../../types/types";
 import {useNavigate,Link } from "react-router-dom";
 import Loading from "../loading/Loading";
+import { useMyContext } from "../Home/context/myContext";
 const SignIn = () => {
     const {data,error,isError,isLoading}=useGetUsers()
+    const {showPassword,setShowPassword}=useMyContext()
     const {mutate}=useSignInUser()
     const navigate=useNavigate()
     const form=useForm<TData>()
@@ -46,7 +48,7 @@ const SignIn = () => {
                errors.email?.message ?errors.email.message:null
             }
         {errors.email && errors.email.type === "required" && "Email is required"}
-        <input placeholder="Password" type="password" {...register("password",{
+        <input placeholder="Password" type={showPassword?"text":"password"} {...register("password",{
          required:true,
          pattern:{
             value:/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,
@@ -59,9 +61,15 @@ const SignIn = () => {
         }
        </div>
        <input className='w-full bg-red-700 active-btn text-center py-3 xs:py-4 text-xl md:text-2xl rounded-md cursor-pointer' value={"Sign In"} type="submit" />
+       <div className="flex items-start w-full justify-between">
        <div className="flex flex-col">
        <div>New To Netflix?</div>
         <Link className="text-neutral-400 underline" to={"/sign_up"}>Sign Up Now</Link>
+       </div>
+       <div className="flex items-center gap-x-2">
+        <input onClick={()=>setShowPassword(!showPassword)} type="checkbox" />
+        <h3 className="text-sm">Show password</h3>
+       </div>
        </div>
         </form>
       </div>

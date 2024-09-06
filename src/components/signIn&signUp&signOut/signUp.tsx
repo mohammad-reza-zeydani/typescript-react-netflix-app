@@ -3,10 +3,10 @@ import usePostUser from "../../hooks/usePostUser";
 import { TData } from "../../types/types";
 import { useNavigate } from "react-router-dom";
 import useGetUsers from "../../hooks/useGetUsers";
-import { useState } from "react";
+import { useMyContext } from "../Home/context/myContext";
 import Loading from "../loading/Loading";
 const SignUp = () => {
-  const [showPassword,setShowPassword]=useState<boolean>(false)
+  const {showPassword,setShowPassword}=useMyContext()
   const {data,error,isError,isLoading}=useGetUsers()
     const form=useForm<TData>()
     const{register,handleSubmit,formState:{errors}}=form
