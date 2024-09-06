@@ -24,7 +24,7 @@ const SignUp = () => {
     return ( 
        <div className=" flex flex-col justify-center items-center mt-2 mb-20 ">
         {isLoading && <Loading/>}
-        {isError && <h1 className=" text-xl p-2 sm:text-2xl bg-red-500 animate-pulse top-10">{error?.message}</h1>}
+        {isError && <h1 className="error">{error?.message}</h1>}
          <form noValidate onSubmit={handleSubmit(submit)} className="flex justify-center items-center w-full mt-3 child:w-11/12 flex-col gap-y-5 bg-black/95 text-white">
          <h1 className="text-3xl">Sign Up</h1>
         <div className="flex flex-col gap-y-3 child:input child:py-2 xs:child:py-5 child:px-1">
@@ -81,7 +81,7 @@ const SignUp = () => {
           Male<input defaultChecked={true} value={"male"} type="radio" {...register("gender")} />
           Female<input  type="radio" value={"female"} {...register("gender")} />
           </div>
-          <input className="bg-red-700 w-1/3 xl:w-1/2 py-1 px-1 text-xs xs:text-base rounded-md cursor-pointer" value={"Sign Up"} type="submit" />
+          <input className="bg-red-700 w-1/3 xl:w-1/2 py-1 px-1 text-xs xs:text-base rounded-md cursor-pointer active-btn " value={"Sign Up"} type="submit" />
         </div>
          </form>
        </div>

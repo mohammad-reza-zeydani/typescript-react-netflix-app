@@ -11,6 +11,9 @@
   .active-btn{
     @apply active:bg-blue-500
   }
+  .error {
+    @apply text-xl p-2 sm:text-2xl bg-red-500 animate-pulse top-10
+  }
 }
 @layer base {
   a{

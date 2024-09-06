@@ -8,7 +8,7 @@ const Input = () => {
             restart your membership
           </h3>
           <input placeholder="Email address" className="w-full input p-3 md:p-5" type="text" />
-          <Link to={"/sign_up"} className="block bg-red-700 px-4 py-2 rounded-md">GetStarted</Link>
+          <Link to={"/sign_up"} className="block bg-red-700 px-4 py-2 rounded-md active-btn">GetStarted</Link>
         </div>
         </div>
      );

@@ -21,8 +21,8 @@ const SignOUt = () => {
         }
     }
     return ( 
-        <form onSubmit={handleSubmit(submit)} className="flex flex-col pb-3 items-center justify-center gap-y-7 text-white mt-32 ">
-            {isError && <h1 className=" absolute text-xl p-2 sm:text-2xl bg-red-500 animate-pulse top-10">{error?.message}</h1>}
+        <form onSubmit={handleSubmit(submit)} className="flex flex-col  items-center mt-2 mb-20">
+            {isError && <h1 className="error">{error?.message}</h1>}
             {isLoading && <Loading/>}
             <h2 className="text-xl xs:text-3xl">Sign Out Your Account</h2>
         <div className="flex flex-col gap-y-4 justify-center items-start w-full px-2 xs:w-1/2 child:w-full child:input child:py-3 child:px-2">
@@ -57,7 +57,7 @@ const SignOUt = () => {
                 errors.password?.message ?errors.password.message:null
              }
         </div>
-        <input className="bg-red-700 active-btn rounded-md px-5 py-2 text-xl " value={"Sign Out"} type="submit" />
+        <input className="bg-red-700 active-btn rounded-md px-5 py-2 text-xl active-btn " value={"Sign Out"} type="submit" />
         </form>
      );
 }

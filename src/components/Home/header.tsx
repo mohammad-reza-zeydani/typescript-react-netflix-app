@@ -34,8 +34,8 @@ const token=localStorage.getItem("token")
                                 <Link to={"/sign_out"} className='bg-red-700 text-xs xs:text-sm active-btn sm:text-lg px-2 py-1 sm:px-5 sm:py-1 rounded-md'>Sign Out</Link>
                              </>
                             ):(
-                                <Link to={"/sign_in"} className='bg-red-700 text-sm sm:text-lg px-3 py-px sm:px-5 sm:py-1 rounded-md'>Sign In</Link>
-                            )
+                                <Link to={"/sign_in"} className='bg-red-700 text-sm sm:text-lg px-3 py-px active-btn sm:px-5 sm:py-1 rounded-md'>Sign In</Link>
+                            ) 
                         }
                     </div>
                 </div>
