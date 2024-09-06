@@ -26,7 +26,7 @@ const SignIn = () => {
         <div className="flex flex-col  items-center mt-2 mb-20 ">
           {isError && <h1 className="error">{error?.message}</h1>}
           {isLoading && <Loading/>}
-        <form noValidate onSubmit={handleSubmit(submit)} className=" flex flex-col gap-y-6 justify-center items-start w-11/12 sm:w-1/2 lg:w-1/3 px-8 sm:px-12 py-5  text-white">
+        <form noValidate onSubmit={handleSubmit(submit)} className=" flex flex-col gap-y-6 justify-center items-start w-11/12 sm:w-1/2 lg:w-1/3 px-2 xs:px-8 sm:px-12 py-5  text-white">
         <h1 className="text-3xl">Sign In</h1>
        <div className="flex flex-col w-full gap-y-6  child:input child:py-3 xs:child:py-4 child:px-1 ">
         <input  placeholder="Email"  type="email" {...register("email",{
