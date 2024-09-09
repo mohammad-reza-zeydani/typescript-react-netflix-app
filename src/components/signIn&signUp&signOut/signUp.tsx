@@ -15,7 +15,7 @@ const SignUp = () => {
     const submit=(user:TData)=>{
       const exist=data.find((item:TData)=>item.email===user.email&&item.password===user.password)
       if(exist){
-        alert("this user has already signed up,you need to signed in")
+        alert("this user has already signed up,you need to sign in")
       }else{
         mutate(user)
         navigate("/sign_in",{replace:true})

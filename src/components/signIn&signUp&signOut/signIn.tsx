@@ -5,8 +5,10 @@ import { TData } from "../../types/types";
 import {useNavigate,Link } from "react-router-dom";
 import Loading from "../loading/Loading";
 import { useMyContext } from "../Home/context/myContext";
+import useGetSignedInUsers from "../../hooks/useGetSignedInUsers";
 const SignIn = () => {
     const {data,error,isError,isLoading}=useGetUsers()
+    const {data:userData}=useGetSignedInUsers()
     const {showPassword,setShowPassword}=useMyContext()
     const {mutate}=useSignInUser()
     const navigate=useNavigate()
@@ -14,12 +16,13 @@ const SignIn = () => {
     const{register,handleSubmit,formState:{errors}}=form
     const submit=(user:TData)=>{
     const exist=data.find((item:TData)=>item.email===user.email&&item.password===user.password)
-    if(exist){
+    const find=userData.find((item:TData)=>item.email===user.email&&item.password===user.password)
+    if(exist && !find){
       mutate(user),
       localStorage.setItem("token",user.LastName+"ThisIsTokenCode")
       navigate("/netflix",{replace:true})
     }else{
-    alert("The user account has not signed up yet,you need to sign up first then try again")
+    alert("The user account has not signed up yet or the account has already signIned")
     }
     }
     return ( 
