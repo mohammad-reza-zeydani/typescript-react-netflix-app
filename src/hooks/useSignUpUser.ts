@@ -1,14 +1,15 @@
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { TData } from "../types/types";
-const usePostUser = () => {
+const useSignUpUser = () => {
     const {mutate}=useMutation({
+        // post the user that want to signUp
         mutationFn:async(user:TData)=>{
-            const response=await axios.post('http://localhost:3000/user/',user)
+            const response=await axios.post('http://localhost:3000/signUp/',user)
             return response.data
         },
     })
     return {mutate};
 }
  
-export default usePostUser
+export default useSignUpUser

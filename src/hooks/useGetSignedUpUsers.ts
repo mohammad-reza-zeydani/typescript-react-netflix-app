@@ -1,14 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-const useGetUsers = () => {
+const useGetSignedUpUsers = () => {
+    // getting the users that have signedIn
     const {data,isLoading,isError,error}=useQuery({
-        queryKey:["users"],
+        queryKey:["signedUp"],
         queryFn:async()=>{
-            const response=await axios.get("http://localhost:3000/user")
+            const response=await axios.get("http://localhost:3000/signUp")
             return response.data
         }
     })
     return {data,error,isError,isLoading};
 }
  
-export default useGetUsers;
+export default useGetSignedUpUsers;

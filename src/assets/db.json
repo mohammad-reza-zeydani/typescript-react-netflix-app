@@ -1,5 +1,5 @@
 {
-  "user": [
+  "signUp": [
     {
       "firstName": "reza",
       "LastName": "zey",
@@ -7,33 +7,15 @@
       "password": "mrz2002Mrz2002$",
       "gender": "male",
       "id": 1
+    },
+    {
+      "firstName": "sara",
+      "LastName": "moradi",
+      "email": "saraMORADI22@gmail.com",
+      "password": "saraMordi$22",
+      "gender": "female",
+      "id": 2
     }
   ],
-  "signIn": [
-    {
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002Mrz2002$",
-      "id": 1
-    },
-    {
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002Mrz2002$",
-      "id": 2
-    },
-    {
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002Mrz2002$",
-      "id": 3
-    },
-    {
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002Mrz2002$",
-      "id": 4
-    },
-    {
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002Mrz2002$",
-      "id": 5
-    }
-  ]
+  "signIn": []
 }
