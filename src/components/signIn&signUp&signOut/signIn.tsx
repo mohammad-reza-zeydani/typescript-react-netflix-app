@@ -5,14 +5,11 @@ import useSignInUser from "../../hooks/useSignInUser";
 import { TData } from "../../types/types";
 import { useNavigate, Link } from "react-router-dom";
 import Loading from "../loading/Loading";
-import { useMyContext } from "../Home/context/myContext";
 const SignIn = () => {
   // destructure useGetUsers hook
   const { data, error, isError, isLoading } = useGetSignedUpUsers(); // >>> getting the users that have signedUp before
   // destructure useGetSignedInUsers hook
   const { data: userData } = useGetSignedInUsers(); // >>> getting the users that have signedIn before
-  // my context to handle true or false for showing or not showing password
-  const { showPassword, setShowPassword } = useMyContext();
   // mutate user by this hook to add it into signIned users by post Request
   const { mutate } = useSignInUser();
   const navigate = useNavigate();
@@ -90,7 +87,7 @@ const SignIn = () => {
               {/* password input */}
           <input
             placeholder='Password'
-            type={showPassword ? "text" : "password"}
+            type="password"
             {...register("password", {
               required: true,
               pattern: {
@@ -121,14 +118,6 @@ const SignIn = () => {
             <Link className='text-neutral-400 underline' to={"/sign_up"}>
               Sign Up Now
             </Link>
-          </div>
-          {/* showing or not showing password input */}
-          <div className='flex items-center gap-x-2'>
-            <input
-              onClick={() => setShowPassword(!showPassword)}
-              type='checkbox'
-            />
-            <h3 className='text-sm'>Show password</h3>
           </div>
         </div>
       </form>

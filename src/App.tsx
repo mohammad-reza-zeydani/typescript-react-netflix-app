@@ -4,13 +4,12 @@ import SignUp from "./components/signIn&signUp&signOut/signUp"
 import SignOUt from "./components/signIn&signUp&signOut/signOut"
 import { Route,Routes} from "react-router-dom"
 import Footer from "./components/Home/footer/footer"
-import NetFlixDashBoard from "./components/netflix/netflix"
-import MyContextProvider from "./components/Home/context/myContext"
+import NetFlixDashBoard from "./components/netflix/netflixDashBoard"
 import NotFoundPage from "./components/notFound"
 import PrivateRoutes from "./components/privateRoutes"
 function App() {
   return (
-    <MyContextProvider>
+    <>
        <Routes>
         <Route element={<PrivateRoutes/>}>
         <Route path="/netflix" element={<NetFlixDashBoard/>}/>
@@ -22,7 +21,7 @@ function App() {
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
       <Footer/>
-    </MyContextProvider>
+      </>
   )
 }
 

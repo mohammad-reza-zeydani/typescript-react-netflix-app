@@ -3,10 +3,10 @@ import useSignUpUser from "../../hooks/useSignUpUser";
 import { TData } from "../../types/types";
 import { useNavigate } from "react-router-dom";
 import useGetSignedUpUsers from "../../hooks/useGetSignedUpUsers";
-import { useMyContext } from "../Home/context/myContext";
 import Loading from "../loading/Loading";
+import { useState } from "react";
 const SignUp = () => {
-  const { showPassword, setShowPassword } = useMyContext();
+  const [showPassword, setShowPassword ] = useState<boolean>(false);
   // destructure useGetSignedUpUsers hook
   const { data, error, isError, isLoading } = useGetSignedUpUsers(); // >>> getting the users that have signedUp before
   const form = useForm<TData>();
@@ -135,7 +135,7 @@ const SignUp = () => {
           {errors.password?.message ? errors.password.message : null}
         </div>
         {/* form footer */}
-        <div className='flex items-center justify-between gap-x-3 xs:gap-x-3 text-base xs:text-xl'>
+        <div className='flex flex-col gap-y-2 xs:flex-row items-center justify-between gap-x-3 xs:gap-x-3 text-base xs:text-xl'>
           <div className='flex items-center gap-x-3'>
             {/* showing or not showing password input */}
             <span className='text-xs xs:text-sm'>Show Password</span>

@@ -4,13 +4,10 @@ import Loading from "../loading/Loading";
 import useGetSignedInUsers from "../../hooks/useGetSignedInUsers";
 import useSignOutUser from "../../hooks/useSignOutUser";
 import { useNavigate, Link } from "react-router-dom";
-import { useMyContext } from "../Home/context/myContext";
 const SignOUt = () => {
   const navigate = useNavigate();
   // destructure useGetSignedInUsers hook
   const { data, isError, error, isLoading } = useGetSignedInUsers(); // >>> getting the users that have signedIn before
-  // my context to handle true or false for showing or not showing password
-  const { showPassword, setShowPassword } = useMyContext();
   // mutate user by this hook to remove it from signIned users by delete request
   const { mutate } = useSignOutUser();
   const form = useForm<TData>();
@@ -79,7 +76,7 @@ const SignOUt = () => {
           {/* password input */}
           <input
             placeholder='Password'
-            type={showPassword ? "text" : "password"}
+            type={"password"}
             {...register("password", {
               required: true,
               pattern: {
@@ -105,19 +102,11 @@ const SignOUt = () => {
         {/* form footer */}
         <div className='flex w-full items-start  justify-between'>
           <div className='flex flex-col'>
-            <div>dont you want to sign out?</div>
+            <div className="text-lg">dont you want to sign out ?</div>
             {/*back to home page link*/}
             <Link className='text-neutral-400 underline' to={"/"}>
-              back to home page
+              back to the home page
             </Link>
-          </div>
-          {/* showing or not showing password input */}
-          <div className='flex items-center gap-x-2'>
-            <input
-              onClick={() => setShowPassword(!showPassword)}
-              type='checkbox'
-            />
-            <h3 className='text-sm'>Show password</h3>
           </div>
         </div>
       </form>
