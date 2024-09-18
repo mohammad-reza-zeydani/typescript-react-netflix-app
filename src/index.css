@@ -38,9 +38,29 @@
   .submit {
     @apply w-full bg-red-700 active-btn text-center py-3 xs:py-4 text-xl md:text-2xl rounded-md cursor-pointer
   }
+  .image{
+    @apply rounded-md h-80 xs:h-96 animated-background bg-gradient-to-r from-gray-400 via-zinc-300 to-white animated-background
+  }
 }
 @layer base {
   a{
     @apply block pt-3 lg:pt-5 text-lg lg:text-xl active:text-neutral-800
   };
+}
+.animated-background {
+  background-size: 400%;
+  -webkit-animation: animation 3s ease infinite;
+  -moz-animation: animation 3s ease infinite;
+  animation: animation 3s ease infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+      background-position: 0% 50%;
+  }
+  
+  50% {
+      background-position: 100% 50%;
+  }
 }

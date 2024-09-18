@@ -1,21 +1,204 @@
 {
   "signUp": [
     {
-      "firstName": "reza",
-      "LastName": "zey",
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002Mrz2002$",
-      "gender": "male",
-      "id": 1
-    },
-    {
       "firstName": "sara",
       "LastName": "moradi",
       "email": "saraMORADI22@gmail.com",
       "password": "saraMordi$22",
       "gender": "female",
+      "id": 1
+    },
+    {
+      "firstName": "alireza",
+      "LastName": "zeydani",
+      "email": "mmdzyzw03@gmail.com",
+      "password": "mrz2002MRZ2002$",
+      "gender": "male",
       "id": 2
     }
   ],
-  "signIn": []
+  "signIn": [
+    {
+      "email": "mmdzyzw03@gmail.com",
+      "password": "mrz2002MRZ2002$",
+      "id": 1
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "Mad max",
+      "cast": [
+        {
+          "name": "Charlize Theron",
+          "avatar": "https://www.hdwallpapers.in/download/charlize_theron_4k-1920x1080.jpg"
+        },
+        {
+          "name": "Tom Hardy ",
+          "avatar": "https://wallpapercave.com/wp/wp1820223.jpg"
+        },
+        {
+          "name": "Zoë Kravitz",
+          "avatar": "https://www.hdwallpapers.in/download/catwoman_dc_comics_zoe_kravitz_hd_the_batman-HD.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "trend",
+      "text": "Mad Max is an Australian media franchise created by George Miller and Byron Kennedy. It centers on a series of post-apocalyptic and dystopian action films. The franchise began in 1979 with Mad Max, and was followed by three sequels: Mad Max 2 (1981; released in the United States as The Road Warrior), Mad Max Beyond Thunderdome (1985) and Mad Max: Fury Road (2015); Miller directed or co-directed all four films. A spin-off, Furiosa: A Mad Max Saga, was released in 2024 and was also directed by Miller. Mel Gibson originally portrayed the series' title character, Max Rockatansky, in the first three films, while Tom Hardy and Jacob Tomuri portrayed the character in the later two films",
+      "image": "https://w0.peakpx.com/wallpaper/452/22/HD-wallpaper-movie-mad-max-fury-road-charlize-theron-imperator-furiosa-max-rockatansky-tom-hardy.jpg",
+      "video": "https://persian14.cdn.asset.aparat.com/aparat-video/a263e3d1d26939ba9e4b21fa12749e6957139629-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjE3YzFkNWExOWQxYTJlNGViNWEyNGY0NjA2MmM3ZThmIiwiZXhwIjoxNzI2NjY4NzAyLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.rk650U7Z2sWPp-Tig_GhJphw7XLA0dXOO4-av8SeCQE",
+      "color": "#e69a8a",
+      "btnColor": "#cf614a"
+    },
+    {
+      "id": 2,
+      "name": "Tomb raider",
+      "cast": [
+        {
+          "name": "Alicia Vikander",
+          "avatar": "https://www.hdwallpapers.in/download/alicia_vikander_lara_croft_tomb_raider_4k-1920x1080.jpg"
+        },
+        {
+          "name": "Daniel Wu",
+          "avatar": "https://c4.wallpaperflare.com/wallpaper/208/201/248/daniel-wu-sunny-into-the-badlands-4k-wallpaper-preview.jpg"
+        },
+        {
+          "name": "Walton Goggins",
+          "avatar": "https://people.com/thmb/esbihbzMMr26zw7vy1N-JDiYaYY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(736x300:738x302)/walton-goggins-fallout-premiere-041024-1-54b1f123170a443897dd62069e2be717.jpg"
+        }
+      ],
+      "genre": "adventure",
+      "type": "trend",
+      "text": "Tomb Raider is a 2018 action-adventure film directed by Roar Uthaug, with a screenplay by Geneva Robertson-Dworet and Alastair Siddons, from a story by Evan Daugherty and Robertson-Dworet. An American and British co-production, it is based on the 2013 video game of the same name, with some elements of its sequel by Crystal Dynamics, a reboot, and the third installment in the Tomb Raider film series. The film stars Alicia Vikander as Lara Croft, who embarks on a perilous journey to her father's last-known destination, hoping to solve the mystery of his disappearance. Dominic West, Walton Goggins, Daniel Wu, and Kristin Scott Thomas appear in supporting roles. ",
+      "image": "https://papers.co/wallpaper/papers.co-be39-tomb-raider-film-hero-art-illustration-25-wallpaper.jpg",
+      "video": "https://youtu.be/8ndhidEmUbI",
+      "color": "#4dc3f3 ",
+      "btnColor": "#3093f0"
+    },
+    {
+      "id": 3,
+      "name": "World war Z",
+      "cast": [
+        {
+          "name": "Brad Pitt",
+          "avatar": "https://ychef.files.bbci.co.uk/1280x720/p0cr3znc.jpg"
+        },
+        {
+          "name": "Mireille Enos",
+          "avatar": "https://external-preview.redd.it/for-all-mankind-season-5-casts-mireille-enos-reuniting-her-v0-P9IOKDA_Wtjq3i1nl0KhgUemrWomHUtTzQ-HEzdaSrU.jpg?width=640&crop=smart&auto=webp&s=bc6cab5628ce0dd12f2cb6e56c0722ab21c0a330"
+        },
+        {
+          "name": "Matthew Fox",
+          "avatar": "https://deadline.com/wp-content/uploads/2024/08/MAtthew-Fox-.jpg"
+        }
+      ],
+      "genre": "horror",
+      "type": "trend",
+      "text": "World War Z is a 2013 American action horror film directed by Marc Forster, with a screenplay by Matthew Michael Carnahan, Drew Goddard, and Damon Lindelof, from a story by Carnahan and J. Michael Straczynski, inspired by the 2006 novel of the same name by Max Brooks. It stars Brad Pitt as Gerry Lane, a former United Nations investigator who travels the world seeking a solution for a sudden zombie apocalypse,[12] along with ensemble supporting cast including Mireille Enos and James Badge Dale. ",
+      "image": "https://wallpaper.forfun.com/fetch/c2/c28be60fce717995347bfff6eeb799f3.jpeg",
+      "video": "https://prim.dideo.tv/video/v1/YzhoczlUaHpPVlFUUWtTM2hVTGdHdlVYZzJYKzVNZklweHh5a05IUTZWVzFoRVpZN0pkaWJUaUlBMzZiamR0NlVUWmZjTTJvR2w0c1RGSDE2akhkTmhwdFdsRVFQZDgvTUxpbEYxWmNBUFpKRDJqRnFlV0RnSk8wTlZsdlJ4UkM4TkNVeGNaK0J0NE82WVhDVyt4eEVKWVNjUkxZeFdLY21CcnI0cjd4MG8wdjFHU280ajc4WGFrcUo4SHFDelkzV1FNcDBIaENhSGpRdEdjU0NOMzM1OEJJMjhUejlaSEg4bjF4alZ5NzJrdk5nR0VkRlhBUTJSNHhEL1RlTlJzMw==.mp4",
+      "color": "#f16464",
+      "btnColor": "#f50909"
+    },
+    {
+      "id": 4,
+      "name": "Seven",
+      "cast": [
+        {
+          "name": "Brad Pitt",
+          "avatar": "https://ychef.files.bbci.co.uk/1280x720/p0cr3znc.jpg"
+        },
+        {
+          "name": "Morgan Freeman",
+          "avatar": "https://historyuk.s3.eu-west-2.amazonaws.com/s3fs-public/styles/768x432/public/2022-01/morgan%20freeman-min.jpg?itok=yEZRDGSQ"
+        },
+        {
+          "name": "Kevin Spacey",
+          "avatar": "https://image.cnbcfm.com/api/v1/image/104806542-GettyImages-687756076-kevin-spacey.jpg?v=1563395560&w=1920&h=1080"
+        }
+      ],
+      "genre": "horror",
+      "type": "recommended",
+      "text": "Seven (often stylized as Se7en)[1] is a 1995 American crime thriller film directed by David Fincher and written by Andrew Kevin Walker. It stars Brad Pitt and Morgan Freeman, with Gwyneth Paltrow, and John C. McGinley in supporting roles. Set in an unnamed, crime-ridden city, Seven's narrative follows disenchanted, nearly retired detective William Somerset (Freeman) and his newly transferred partner David Mills (Pitt) as they try to stop a serial killer from committing a series of murders based on the seven deadly sins. ",
+      "image": "https://facts.net/wp-content/uploads/2023/06/35-facts-about-the-movie-se7en-1687246188.jpeg",
+      "video": "https://prim.dideo.tv/video/v1/YzhoczlUaHpPVlFUUWtTM2hVTGdHcHFOYXd6eVZZTUwyaTVpT25udkZLRUlDVDNsOXMxOGI2OWo3Y1NjakFJTWRkNjNuemtGeUFRbldtVFFxaHVHR3BNR2xaeGh0dTRnZ2JESDhHM2phZWY3bnlLS09EbmJzRnZLbWt1VHdsU1FrRnB6YU9RODM2WVUwa0lieHE1YWI4cEhDdFRHN0lRK0ZPRFBXM0dDdTlSYlhxbEFFOFNYS3Vua2FBcHoybnVzaDhMVFpnQ1orSU5aQ3k1VnFvVE1BVGlnQm9sbS9yV0xLOWhwRWEwOFg3WnRNbWlEUS9PZVJQWFBFdjBqVEFucw==.mp4",
+      "color": "#735323",
+      "btnColor": "#c89341"
+    },
+    {
+      "id": 5,
+      "name": "saving ryan",
+      "cast": [
+        {
+          "name": "Tom Hanks",
+          "avatar": "https://www.poynter.org/wp-content/uploads/2023/01/AP_23010105050150.jpg"
+        },
+        {
+          "name": "Matt Damon",
+          "avatar": "https://media.cnn.com/api/v1/images/stellar/prod/230713051631-01-matt-damon-depression.jpg?c=original"
+        },
+        {
+          "name": "Tom Sizemore",
+          "avatar": "https://i.abcnewsfe.com/a/833fef2c-dab5-4c2c-957b-1e04c5b77c22/tom-sizemore-230_hpMain_20230227-212309_4x3.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "recommended",
+      "text": "Saving Private Ryan is a 1998 American epic war film directed by Steven Spielberg and written by Robert Rodat. Set in 1944 in Normandy, France, during World War II, it follows a group of soldiers, led by Captain John Miller (Tom Hanks), on a mission to locate Private James Francis Ryan (Matt Damon) and bring him home safely after his three brothers have been killed in action. The cast also includes Edward Burns, Tom Sizemore, Barry Pepper, Giovanni Ribisi, Vin Diesel, Adam Goldberg and Jeremy Davies.",
+      "image": "https://stmawesevents.seatlab.com/storage/events/thumbnail/1809218210667da80f6a14b.jpg",
+      "video": "https://prim.dideo.tv/video/v1/YzhoczlUaHpPVlFUUWtTM2hVTGdHamMzek01SkJDeHlZWkFFblMycEJ6T1ZaUCtZQzN5aHBqTXp4L1A5RnJXUU1RL2hQdStjWDBkQ3pIMjNuQ0RFWUFUZXkyUEkxSURXTTBXMU5yMEZNVUhqc09xbkNTL09pbGMzNHB3SUtzQUpOWTdmd0t2cFF6QmtydTF2ejlkdWREV2JoZVNkOHF1eWt5RXFoQTZxYys0bW12UzBTUllsc0owZ3N3cVFyeGhNWUZOcnUrakVIdG4rV3lFcE4rQ3c1c3YrUFphanlRZWM5RmVuR0d3MWpXb0QyOVlveHJuVWpuczNhbkxtUTlydA==.mp4",
+      "color": "#5af390 ",
+      "btnColor": "#00c444"
+    },
+    {
+      "id": 6,
+      "name": "Gladiator",
+      "cast": [
+        {
+          "name": "Russell Crowe",
+          "avatar": "https://www.krock.com.au/wp-content/uploads/sites/32/2024/02/20240222-Russell-Crowe-Looks-Unrecognisable-Feature.jpg"
+        },
+        {
+          "name": "Joaquin Phoenix",
+          "avatar": "https://vegnews.com/media/W1siZiIsIjIwMTg2L1ZlZ05ld3MuSm9hcXVpblBob2VuaXguUmljY2FyZG9HaGlsYXJkaS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.JoaquinPhoenix.RiccardoGhilardi.jpg?sha=dd55693fceed3c4f"
+        },
+        {
+          "name": "Connie Nielsen",
+          "avatar": "https://facts.net/wp-content/uploads/2023/07/43-facts-about-connie-nielsen-1690563499.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "recommended",
+      "text": "Gladiator is a 2000 historical epic film directed by Ridley Scott and written by David Franzoni, John Logan, and William Nicholson. It stars Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed, Derek Jacobi, Djimon Hounsou and Richard Harris.[a]Crowe portrays the Roman general Maximus Decimus Meridius, who is betrayed when Commodus, the ambitious son of Emperor Marcus Aurelius, murders his father and seizes the throne. Reduced to slavery, Maximus becomes a gladiator and rises through the ranks of the arena, determined to avenge the murders of his family and the emperor. ",
+      "image": "https://wallpapercat.com/w/full/3/c/0/42749-1920x1080-desktop-1080p-gladiator-wallpaper-photo.jpg",
+      "video": "https://prim.dideo.tv/video/v1/YzhoczlUaHpPVlFUUWtTM2hVTGdHbnJ4NG1yb1BsaGZuKzM4elBYR0hCVlZoTi9pOHhtS1A0dmlQb3JaVDZ5MWt3N0Y2SmZycURpUmFzaHhuaExzS2FzR0hOdWllVzdPd2FzTm85bW5BK2xsbTBGY1VqSThmakY4OVBVWkZpVXNtc2VLdW8vSEJyY2d4Z2FhSWFGb0dsR29QZmticGxRczh2T200WnZSb1A0TUVRRzFReWJkY3V0UTBMS1Q0WXVqYTVpTUZQK1V3QXkzcVBDZHBBSEMrUDkxWFN4bU41d09FS2syZlBEb0tOeU96VWhRVlZkVEc1c01lc2NpbUdZVQ==.mp4",
+      "color": "#b1b1b1",
+      "btnColor": "#9b9b9b"
+    },
+    {
+      "id": 7,
+      "name": "Joker",
+      "cast": [
+        {
+          "name": "Joaquin Phoenix",
+          "avatar": "https://vegnews.com/media/W1siZiIsIjIwMTg2L1ZlZ05ld3MuSm9hcXVpblBob2VuaXguUmljY2FyZG9HaGlsYXJkaS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.JoaquinPhoenix.RiccardoGhilardi.jpg?sha=dd55693fceed3c4f"
+        },
+        {
+          "name": "Robert De Niro",
+          "avatar": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1256749551.jpeg?c=16x9&q=h_833,w_1480,c_fill"
+        },
+        {
+          "name": "Zazie Beetz",
+          "avatar": "https://bgn2018media.s3.amazonaws.com/wp-content/uploads/2018/03/28202108/zazie-beetz.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "recommended",
+      "text": "Joker is a 2019 American psychological thriller film[4] directed and co-produced by Todd Phillips from a screenplay he wrote with Scott Silver. The film, loosely based on DC Comics characters, stars Joaquin Phoenix as the Joker. Set in 1981, it follows Arthur Fleck, a failed clown and aspiring stand-up comedian whose descent into mental illness and nihilism inspires a violent countercultural revolution against the wealthy in a decaying Gotham City. Robert De Niro, Zazie Beetz, and Frances Conroy appear in supporting roles. Distributed by Warner Bros. Pictures, Joker was produced by Warner Bros. Pictures and DC Films in association with Village Roadshow Pictures, Bron Creative and Joint Effort. ",
+      "image": "https://w0.peakpx.com/wallpaper/708/303/HD-wallpaper-joker-2019-movie-new-joker-movie-joker-2019-movies-movies-joaquin-phoenix-poster.jpg",
+      "video": "https://prim.dideo.tv/video/v1/YzhoczlUaHpPVlFUUWtTM2hVTGdHbmJ4TlNDSnRFSERwNGZVa0FkYTdCU1pJc2oyMTdIMTl1d2lhY2tUREhTTWZJTTUzQmhybXFZQktxaC8vWFd2WDZmNVJ2aFJOTFZBREV5N3dwdmFsZVMyb0pxTUsxRWZnanNZeURoS2xyOUdRcVI1ekd4WEJxNkJyNmtMMytVVlJhR1dpa0lPeHdPS1JOYmN1dS83WWhSdElnYUY5eUszL2wzK1BJcE5NRzRuV3RyS0J1SFRyLzJ3ODFQYWFreitHWHEyNzdRdmNoSlNGOUJMMUpaZmdZNC9sck9nanJ4SW9rL1FEd2tDWXlIRQ==.mp4",
+      "color": " #97715d",
+      "btnColor": "#9e6244"
+    }
+  ]
 }
