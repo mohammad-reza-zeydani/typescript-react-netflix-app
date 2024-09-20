@@ -32,14 +32,8 @@
   .form {
     @apply flex flex-col gap-y-6 justify-center items-start w-11/12 sm:w-1/2 lg:w-1/3 px-2 xs:px-8 sm:px-12 py-5  text-white
   }
-  .form-body{
-      @apply flex flex-col w-full gap-y-6  child:input child:py-3 xs:child:py-4 child:px-1 
-  }
-  .submit {
-    @apply w-full bg-red-700 active-btn text-center py-3 xs:py-4 text-xl md:text-2xl rounded-md cursor-pointer
-  }
   .image{
-    @apply rounded-md h-80 xs:h-96 animated-background bg-gradient-to-r from-gray-400 via-zinc-300 to-white animated-background
+    @apply rounded-md h-80 xs:h-96 animated-background bg-gradient-to-r from-gray-600 via-zinc-300 to-white animated-background
   }
 }
 @layer base {

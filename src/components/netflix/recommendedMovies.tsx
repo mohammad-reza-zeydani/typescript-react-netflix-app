@@ -17,7 +17,7 @@ const RecommendedMovies = () => {
         <h1 className='error text-center'>{error?.message}</h1>
       ) : isLoading ? (
         // loading component
-        <SkeletonLoading />
+        <SkeletonLoading/>
       ) : (
         // main swiper
         <Swiper
@@ -50,9 +50,9 @@ const RecommendedMovies = () => {
               return (
                 <SwiperSlide
                   style={{ backgroundColor: item.color }}
-                  className='flex flex-col gap-y-2 h-80 xs:h-96 p-1 md:p-2 rounded-md'>
+                  className='flex flex-col  gap-y-2 h-80 xs:h-96 p-1 md:p-2 rounded-md'>
                     {/* cart main div */}
-                  <div className='flex flex-col w-full h-full items-start'>
+                  <div className='flex flex-col w-full h-full items-start z-50 '>
                     {/* the movie image */}
                     <img
                       loading='lazy'
@@ -61,7 +61,7 @@ const RecommendedMovies = () => {
                       alt=''
                     />
                     {/* the movie name */}
-                   <h1>{item.name}</h1>
+                   <h1 className="mt-2 text-zinc-900">{item.name}</h1>
                    {/* the movie genre */}
                    <h4 className='text-gray-700'>{item.genre}</h4>
                   </div>
@@ -69,7 +69,7 @@ const RecommendedMovies = () => {
                   <Link
                     style={{ backgroundColor: item.btnColor }}
                     to={"/"}
-                    className='py-0 rounded-lg'>
+                    className='py-0 rounded-lg hover:scale-110 transition-transform'>
                     {/* more info btn */}
                     <button className='py-1 px-4 sm:px-5 text-zinc-900 active:text-white'>
                       More Info

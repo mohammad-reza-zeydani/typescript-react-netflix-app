@@ -3,7 +3,6 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../../../src/style.css"
-import 'react-loading-skeleton/dist/skeleton.css'
 const SkeletonLoading = () => {
     return (
         <Swiper

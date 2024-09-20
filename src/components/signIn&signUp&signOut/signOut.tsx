@@ -3,7 +3,8 @@ import { TData } from "../../types/types";
 import Loading from "../loading/Loading";
 import useGetSignedInUsers from "../../hooks/useGetSignedInUsers";
 import useSignOutUser from "../../hooks/useSignOutUser";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
+import Form from "./form";
 const SignOUt = () => {
   const navigate = useNavigate();
   // destructure useGetSignedInUsers hook
@@ -42,73 +43,7 @@ const SignOUt = () => {
         noValidate
         onSubmit={handleSubmit(submit)}
         className='form'>
-        {/* form title */}
-        <h1 className='text-3xl'>Sign Out</h1>
-        <div className='form-body'>
-          {/* email input */}
-          <input
-            placeholder='Email'
-            type='email'
-            {...register("email", {
-              required: true,
-              pattern: {
-                value: /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g,
-                message: "invalid format",
-              },
-              validate: {
-                notAdmin: (field) => {
-                  return (
-                    field !== "mmdzyzw033zeydani@gmail.com" ||
-                    "try another email address"
-                  );
-                },
-                notBlockListed: (field) => {
-                  return !field.endsWith("baddomain.com") || "unacceptable";
-                },
-              },
-            })}
-          />
-          {/* email validation messages */}
-          {errors.email?.message ? errors.email.message : null}
-          {errors.email &&
-            errors.email.type === "required" &&
-            "Email is required"}
-          {/* password input */}
-          <input
-            placeholder='Password'
-            type={"password"}
-            {...register("password", {
-              required: true,
-              pattern: {
-                value:
-                  /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,
-                message:
-                  "Password must contain one digit from 1 to 9, one lowercase letter, one uppercase letter, one special character, no space, and it must be 8-16 characters long.",
-              },
-            })}
-          />
-          {/* password validation messages */}
-          {errors.password &&
-            errors.password.type === "required" &&
-            "Password is required"}
-          {errors.password?.message ? errors.password.message : null}
-          {/* submit input */}
-        </div>
-        <input
-          className='submit'
-          value={"Sign Out"}
-          type='submit'
-        />
-        {/* form footer */}
-        <div className='flex w-full items-start  justify-between'>
-          <div className='flex flex-col'>
-            <div className="text-lg">dont you want to sign out ?</div>
-            {/*back to home page link*/}
-            <Link className='text-neutral-400 underline' to={"/"}>
-              back to the home page
-            </Link>
-          </div>
-        </div>
+        <Form register={register} errors={errors} title={"Sign Out"} link="/" text="dont you want to sign out ?" linkText="back to the home page"/>
       </form>
     </div>
   );

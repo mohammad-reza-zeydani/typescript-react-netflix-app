@@ -5,6 +5,7 @@ export type TBody={
     text:string,
     reverse:boolean
 };
+import { FieldErrors, UseFormRegister } from "react-hook-form";
 export type THeader={
         id:number,
         name:string
@@ -26,4 +27,11 @@ export type TData={
     password:string,
     gender:"male" | "female"
 }
-
+export type TSignInAndSignOut={
+    text:string
+    link:string
+    linkText:string
+    title:string
+    errors:FieldErrors<TData>,
+    register:UseFormRegister<TData>
+}
