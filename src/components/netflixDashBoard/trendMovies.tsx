@@ -6,13 +6,13 @@ import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import SkeletonLoading from "../loading/skeleton";
 import { TMovies } from "../../types/types";
-const RecommendedMovies = () => {
+const TrendMovies = () => {
       // destructure useGetMovies hook
   const { data, error, isError, isLoading } = useGetMovies();
   return (
     <div>
         {/* movie type title */}
-    <h1 className="text-2xl sm:text-3xl mb-10 pl-3 sm:pl-5">Recommended</h1>
+    <h1 className="text-2xl sm:text-3xl mb-10 pl-3 sm:pl-5">Trends</h1>
       {isError ? (
         // the error message
         <h1 className='error text-center'>{error?.message}</h1>
@@ -46,8 +46,8 @@ const RecommendedMovies = () => {
           className='mySwiper'>
           {data
         //   the movies with recommended type
-            .filter((item:TMovies) => item.type === "recommended")
-            .map((item:TMovies) => {
+            .filter((item: TMovies) => item.type === "trend")
+            .map((item: TMovies) => {
               return (
                 <SwiperSlide
                   style={{ backgroundColor: item.color }}
@@ -85,4 +85,4 @@ const RecommendedMovies = () => {
   );
 };
 
-export default RecommendedMovies;
+export default TrendMovies;

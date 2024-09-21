@@ -35,3 +35,18 @@ export type TSignInAndSignOut={
     errors:FieldErrors<TData>,
     register:UseFormRegister<TData>
 }
+type Object ={
+    name:string
+    avatar: string
+}
+export type TMovies ={
+        id: number,
+        name:string,
+        cast:Object[],
+        genre: string
+        type:string,
+        text:string,
+        image:string,
+        color:string,
+        btnColor:string
+}
