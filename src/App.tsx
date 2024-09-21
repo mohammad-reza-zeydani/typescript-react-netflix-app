@@ -1,10 +1,10 @@
-import Home from "./components/Home/home"
+import Home from "./components/netflixHome/home"
 import SignIn from "./components/signIn&signUp&signOut/signIn"
 import SignUp from "./components/signIn&signUp&signOut/signUp"
 import SignOUt from "./components/signIn&signUp&signOut/signOut"
 import { Route,Routes} from "react-router-dom"
-import Footer from "./components/Home/footer/footer"
-import NetFlixDashBoard from "./components/netflix/netflixDashBoard"
+import Footer from "./components/netflixHome/footer/footer"
+import NetFlixDashBoard from "./components/netflixDashBoard/netflixDashBoard"
 import NotFoundPage from "./components/notFound"
 import PrivateRoutes from "./components/privateRoutes"
 function App() {
