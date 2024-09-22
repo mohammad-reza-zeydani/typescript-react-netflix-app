@@ -4,9 +4,9 @@ import Series from "./series";
 import DashboardNavigation from "./dashboardNav";
 const NetFlixDashBoard = () => {
   return (
-   <div className="mt-8">
+   <div className="mt-4">
      <DashboardNavigation/>
-    <div className=' my-12 sm:my-10 space-y-20 text-white'>
+    <div className=' my-14 sm:my-16 space-y-20 text-white'>
       <RecommendedMovies/>
       <TrendMovies/>
       <Series/>
