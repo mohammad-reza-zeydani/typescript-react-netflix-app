@@ -3,8 +3,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
-import SkeletonLoading from "../loading/skeleton";
-import { TGetMoviesDataProps, TMovies } from "../../types/types";
+import SkeletonLoading from "../../loading/skeleton";
+import { TGetMoviesDataProps , TMovies } from "../../../types/types";
 const RecommendedMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) => {
   return (
     <div>

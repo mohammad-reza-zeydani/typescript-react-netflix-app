@@ -3,13 +3,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
-import SkeletonLoading from "../loading/skeleton";
-import { TGetMoviesDataProps, TMovies } from "../../types/types";
-const TrendMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) => {
+import SkeletonLoading from "../../loading/skeleton";
+import { TGetMoviesDataProps , TMovies } from "../../../types/types";
+const Series = ({ data, error, isError, isLoading }:TGetMoviesDataProps) => {
   return (
     <div>
         {/* movie type title */}
-    <h1 className="title">Trends</h1>
+    <h1 className="title">Series</h1>
       {isError ? (
         // the error message
         <h1 className='error text-center'>{error?.message}</h1>
@@ -43,11 +43,11 @@ const TrendMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) =>
           className='mySwiper'>
           {data
         //   the movies with recommended type
-            .filter((item: TMovies) => item.type === "trend")
-            .map((item: TMovies) => {
+            .filter((item:TMovies) => item.type === "series")
+            .map((item:TMovies) => {
               return (
                 <SwiperSlide
-                  style={{borderColor: item.color }}
+                  style={{ borderColor: item.color }}
                   className='swiper-slide'>
                     {/* cart main div */}
                   <div className='flex flex-col w-full h-full items-start z-50 '>
@@ -82,4 +82,4 @@ const TrendMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) =>
   );
 };
 
-export default TrendMovies;
+export default Series;
