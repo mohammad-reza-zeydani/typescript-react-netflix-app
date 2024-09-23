@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import useGetSignedUpUsers from "../../hooks/useGetSignedUpUsers";
 import useGetSignedInUsers from "../../hooks/useGetSignedInUsers";
 import useSignInUser from "../../hooks/useSignInUser";
-import { TData } from "../../types/types";
+import { TUserData } from "../../types/types";
 import { useNavigate} from "react-router-dom";
 import Loading from "../loading/Loading";
 import Form from "./form";
@@ -14,7 +14,7 @@ const SignIn = () => {
   // mutate user by this hook to add it into signIned users by post Request
   const { mutate } = useSignInUser();
   const navigate = useNavigate();
-  const form = useForm<TData>();
+  const form = useForm<TUserData>();
   // destructure my form hook
   const {
     register,
@@ -22,13 +22,13 @@ const SignIn = () => {
     formState: { errors },
   } = form;
   // at this function check is there any correct user to mutate it or not
-  const submit = (user: TData) => {
+  const submit = (user: TUserData) => {
     const exist = data.find(
-      (item: TData) =>
+      (item: TUserData) =>
         item.email === user.email && item.password === user.password,
     ); // >>> find exact user in signedUp Users
     const find = userData.find(
-      (item: TData) =>
+      (item: TUserData) =>
         item.email === user.email && item.password === user.password,
     ); // >>> find exact user in signIned users
     if (exist && !find) {

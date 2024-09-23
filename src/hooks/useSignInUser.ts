@@ -1,10 +1,10 @@
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
-import { TData } from "../types/types";
+import { TUserData } from "../types/types";
 const useSignInUser = () => {
     // post the user that want to signIn
     const {mutate}=useMutation({
-        mutationFn:async(user:TData)=>{
+        mutationFn:async(user:TUserData)=>{
             const response=await axios.post('http://localhost:3000/signIn/',user)
             return response.data
         },

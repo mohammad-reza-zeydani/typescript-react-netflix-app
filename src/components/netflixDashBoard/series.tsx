@@ -1,14 +1,11 @@
-import useGetMovies from "../../hooks/useGetMovies";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import SkeletonLoading from "../loading/skeleton";
-import { TMovies } from "../../types/types";
-const Series = () => {
-      // destructure useGetMovies hook
-  const { data, error, isError, isLoading } = useGetMovies();
+import { TGetMoviesDataProps, TMovies } from "../../types/types";
+const Series = ({ data, error, isError, isLoading }:TGetMoviesDataProps) => {
   return (
     <div>
         {/* movie type title */}

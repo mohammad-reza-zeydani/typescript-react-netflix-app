@@ -7,9 +7,10 @@ import Footer from "./components/netflixHome/footer/footer"
 import NetFlixDashBoard from "./components/netflixDashBoard/netflixDashBoard"
 import NotFoundPage from "./components/notFound"
 import PrivateRoutes from "./components/privateRoutes"
+import MyContextProvider from "./components/context/context"
 function App() {
   return (
-    <>
+    <MyContextProvider>
        <Routes>
         <Route element={<PrivateRoutes/>}>
         <Route path="/netflix" element={<NetFlixDashBoard/>}/>
@@ -21,7 +22,7 @@ function App() {
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
       <Footer/>
-      </>
+      </MyContextProvider>
   )
 }
 

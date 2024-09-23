@@ -19,7 +19,7 @@ export type TFooter={
     id:number,
     text:string,
 }
-export type TData={
+export type TUserData={
     id:number,
     firstName:string,
     LastName:string,
@@ -32,8 +32,8 @@ export type TSignInAndSignOut={
     link:string
     linkText:string
     title:string
-    errors:FieldErrors<TData>,
-    register:UseFormRegister<TData>
+    errors:FieldErrors<TUserData>,
+    register:UseFormRegister<TUserData>
 }
 type Object ={
     name:string
@@ -49,4 +49,10 @@ export type TMovies ={
         image:string,
         color:string,
         btnColor:string
+}
+export type TGetMoviesDataProps={
+    data:TMovies[]
+    isLoading:boolean,
+    isError:boolean,
+    error:Error | null
 }

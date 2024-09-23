@@ -1,8 +1,10 @@
 import netflixLogo from "../../assets/images/netLogo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useMyContext } from "../context/context";
 const DashboardNavigation = () => {
   const [open, setOpen] = useState<boolean>(false);
+  const { setSearch } = useMyContext();
   return (
     <nav>
       {/* navigation mobile design section */}
@@ -42,28 +44,32 @@ const DashboardNavigation = () => {
             </svg>
           )}
           {/* navigation search box */}
-          <div className='flex gap-x-1 w-3/4  border text-white py-1  pl-2  rounded-sm bg-black'>
-            {/* search svg */}
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              strokeWidth={1.5}
-              stroke='currentColor'
-              className='size-6 lg:size-8'>
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z'
+          <form className='w-3/4 text-white'>
+            <div className='relative'>
+              <div className='absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none'>
+                <svg
+                  className='w-5'
+                  aria-hidden='true'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 20 20'>
+                  <path
+                    stroke='currentColor'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z'
+                  />
+                </svg>
+              </div>
+              <input
+                type='search'
+                onChange={(e) => setSearch(e.target.value)}
+                className='w-full bg-black border-2 rounded-sm p-3 ps-8 text-base outline-none focus:outline-slate-700'
+                placeholder='Search for movies'
               />
-            </svg>
-            {/* search input */}
-            <input
-              className='outline-none text-base lg:text-xl bg-black w-full'
-              type='search'
-              placeholder='search for movies'
-            />
-          </div>
+            </div>
+          </form>
         </div>
         {/* list of movie genre links */}
         {open && (
@@ -97,28 +103,33 @@ const DashboardNavigation = () => {
           </ul>
         </div>
         {/* navigation right content div*/}
-        <div className='flex gap-x-2 md:w-1/4 lg:w-1/3 border-2 text-white py-2 lg:py-4 pl-3  rounded-sm bg-black'>
-          {/* search svg */}
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth={1.5}
-            stroke='currentColor'
-            className='size-6 lg:size-8'>
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z'
+
+        <form className='md:w-1/4 lg:w-1/3 text-white'>
+          <div className='relative'>
+            <div className='absolute inset-y-0 start-0 flex items-center ps-2 lg:ps-4 pointer-events-none'>
+              <svg
+                className='w-5 lg:w-6'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 20 20'>
+                <path
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z'
+                />
+              </svg>
+            </div>
+            <input
+              type='search'
+              onChange={(e) => setSearch(e.target.value)}
+              className='w-full bg-black border-2 rounded-sm p-4 ps-8 lg:ps-12 text-base lg:text-lg outline-none focus:outline-slate-700'
+              placeholder='Search for movies'
             />
-          </svg>
-          {/* search input */}
-          <input
-            className='outline-none text-base lg:text-xl bg-black w-full'
-            type='search'
-            placeholder='search for movies'
-          />
-        </div>
+          </div>
+        </form>
       </section>
     </nav>
   );

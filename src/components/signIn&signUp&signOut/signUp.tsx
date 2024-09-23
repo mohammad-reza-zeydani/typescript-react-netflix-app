@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import useSignUpUser from "../../hooks/useSignUpUser";
-import { TData } from "../../types/types";
+import { TUserData } from "../../types/types";
 import { useNavigate } from "react-router-dom";
 import useGetSignedUpUsers from "../../hooks/useGetSignedUpUsers";
 import Loading from "../loading/Loading";
@@ -9,7 +9,7 @@ const SignUp = () => {
   const [showPassword, setShowPassword ] = useState<boolean>(false);
   // destructure useGetSignedUpUsers hook
   const { data, error, isError, isLoading } = useGetSignedUpUsers(); // >>> getting the users that have signedUp before
-  const form = useForm<TData>();
+  const form = useForm<TUserData>();
   // destructure my form hook
   const {
     register,
@@ -20,9 +20,9 @@ const SignUp = () => {
   const { mutate } = useSignUpUser();
   const navigate = useNavigate();
   // at this function check is there any correct user to mutate it or not
-  const submit = (user: TData) => {
+  const submit = (user: TUserData) => {
     const exist = data.find(
-      (item: TData) =>
+      (item: TUserData) =>
         item.email === user.email && item.password === user.password,
     ); // >>> find the exact user in signedUp users
     if (exist) {
