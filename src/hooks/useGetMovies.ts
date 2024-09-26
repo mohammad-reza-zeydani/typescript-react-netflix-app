@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-const useGetMovies = (search:string) => {
+const useGetMovies = (search?:string) => {
     // getting the List of the movies
     const {data,isError,isLoading,error}=useQuery({
         queryKey:["movies",search],

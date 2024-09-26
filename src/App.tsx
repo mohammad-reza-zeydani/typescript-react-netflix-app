@@ -8,6 +8,7 @@ import NetFlixDashBoard from "./components/netflixDashBoard/netflixDashBoard"
 import NotFoundPage from "./components/notFound"
 import PrivateRoutes from "./components/privateRoutes"
 import MyContextProvider from "./components/context/context"
+import MoreInfo from "./components/netflixDashBoard/moreInfoPage"
 function App() {
   return (
     <MyContextProvider>
@@ -15,6 +16,7 @@ function App() {
         <Route element={<PrivateRoutes/>}>
         <Route path="/netflix" element={<NetFlixDashBoard/>}/>
         <Route path="/sign_out"element={<SignOUt/>}/>
+        <Route path="/informaiton/:id"element={<MoreInfo/>}/>
         </Route>
         <Route path="/" element={<Home/>}/>
         <Route path="/sign_up" element={<SignUp/>}/>

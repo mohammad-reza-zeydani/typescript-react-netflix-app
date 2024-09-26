@@ -8,7 +8,7 @@ const DashBoardBody = () => {
      // destructure useGetMovies hook
   const {data,isLoading,isError,error}=useGetMovies(search)
     return ( 
-        <body className=' my-14 sm:my-16 space-y-20 text-white'>
+        <body className=' my-14 sm:my-16 space-y-20 text-white bg-black'>
         {/* showing search result by data length */}
       {search.length !==0 &&  <h1 className="text-center text-white text-4xl lg:text-5xl">search result = {data && data.length}</h1>}
         <RecommendedMovies data={data} isLoading={isLoading} isError={isError} error={error}/>

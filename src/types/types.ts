@@ -35,14 +35,14 @@ export type TSignInAndSignOut={
     errors:FieldErrors<TUserData>,
     register:UseFormRegister<TUserData>
 }
-type Object ={
+export type CastObject ={
     name:string
     avatar: string
 }
 export type TMovies ={
         id: number,
         name:string,
-        cast:Object[],
+        cast:CastObject[],
         genre: string
         type:string,
         text:string,

@@ -66,7 +66,7 @@ const RecommendedMovies = ({ data, error, isError, isLoading }:TGetMoviesDataPro
                   {/* more info Link */}
                   <Link
                     style={{ backgroundColor: item.btnColor }}
-                    to={"/"}
+                    to={`/informaiton/${item.id}`}
                     className='py-0 rounded-lg hover:scale-110 transition-transform'>
                     {/* more info btn */}
                     <button className='moreInfo-btn'>More Info</button>
