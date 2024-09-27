@@ -9,6 +9,7 @@ import NotFoundPage from "./components/notFound"
 import PrivateRoutes from "./components/privateRoutes"
 import MyContextProvider from "./components/context/context"
 import MoreInfo from "./components/netflixDashBoard/moreInfoPage"
+import MarkedMovies from "./components/netflixDashBoard/dashBoardBody/markedMoviePage/markedMovies"
 function App() {
   return (
     <MyContextProvider>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/netflix" element={<NetFlixDashBoard/>}/>
         <Route path="/sign_out"element={<SignOUt/>}/>
         <Route path="/informaiton/:id"element={<MoreInfo/>}/>
+        <Route path="/markedMoviesPage"element={<MarkedMovies/>}/>
         </Route>
         <Route path="/" element={<Home/>}/>
         <Route path="/sign_up" element={<SignUp/>}/>
