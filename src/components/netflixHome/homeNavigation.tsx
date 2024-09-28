@@ -39,7 +39,7 @@ const Navigation = () => {
           {token ? (
             // show dashboard and signOut links if there is token
             <>
-              <Link to={"/netflix"} className='header-links'>
+              <Link to={"/netflixDashboard"} className='header-links'>
                 Dashboard
               </Link>
               <Link to={"/sign_out"} className='header-links'>

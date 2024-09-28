@@ -17,7 +17,7 @@ function App() {
        <Routes>
         {/* private routes  */}
         <Route element={<PrivateRoutes/>}>
-        <Route path="/netflix" element={<NetFlixDashBoard/>}/>
+        <Route path="/netflixDashboard" element={<NetFlixDashBoard/>}/>
         <Route path="/sign_out"element={<SignOUt/>}/>
         <Route path="/informaiton/:id"element={<MoreInfo/>}/>
         <Route path="/markedMoviesPage"element={<MarkedMovies/>}/>
