@@ -3,6 +3,7 @@ import netflix from "../../assets/images/netflix-header.jpg";
 import { THeader } from "../../types/types";
 import { Link } from "react-router-dom";
 const Navigation = () => {
+//  this object is to select  language
   const language: THeader[] = [
     {
       id: 1,
@@ -13,10 +14,10 @@ const Navigation = () => {
       name: "Spanish",
     },
   ];
-  const token = localStorage.getItem("token"); //>>get the token of signIned user
+  const token = localStorage.getItem("token"); //>>get the token of the signIned user
   return (
     <nav className=' relative flex flex-col items-center text-white bg-gradient-to-r from-gray-900 via-gray900 to-gray-800 myborder'>
-      {/* navigation head section */}
+      {/* navigation h section */}
       <section className='absolute w-size flex justify-between items-center'>
         {/* navigation leaft content */}
         <div>

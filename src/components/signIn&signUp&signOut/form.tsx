@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { TSignInAndSignOut } from "../../types/types";
+// the props we got from sign in and sign out components
 const Form = ({register,errors,title,link,text,linkText}:TSignInAndSignOut) => {
     return ( 
         <>
@@ -13,7 +14,7 @@ const Form = ({register,errors,title,link,text,linkText}:TSignInAndSignOut) => {
             {...register("email", {
               required: true,
               pattern: {
-                value: /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g,
+                value: /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g,//regular expression to check email format
                 message: "invalid format",
               },
               validate: {
@@ -42,7 +43,7 @@ const Form = ({register,errors,title,link,text,linkText}:TSignInAndSignOut) => {
               required: true,
               pattern: {
                 value:
-                  /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,
+                  /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,//regular expression to check password format
                 message:
                   "Password must contain one digit from 1 to 9, one lowercase letter, one uppercase letter, one special character, no space, and it must be 8-16 characters long.",
               },

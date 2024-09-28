@@ -6,6 +6,7 @@ import useGetSignedUpUsers from "../../hooks/useGetSignedUpUsers";
 import Loading from "../loading/Loading";
 import { useState } from "react";
 const SignUp = () => {
+  // if check box  is checked by the user,set show password true and show the password
   const [showPassword, setShowPassword ] = useState<boolean>(false);
   // destructure useGetSignedUpUsers hook
   const { data, error, isError, isLoading } = useGetSignedUpUsers(); // >>> getting the users that have signedUp before
@@ -25,9 +26,11 @@ const SignUp = () => {
       (item: TUserData) =>
         item.email === user.email && item.password === user.password,
     ); // >>> find the exact user in signedUp users
+    // if the user is exist in signedUp users dont mutate user 
     if (exist) {
       alert("this user has already signed up,you need to sign in");
     } else {
+      // the user is SignUp for the first time so mutate user and navigate to sign_in page
       mutate(user);
       navigate("/sign_in", { replace: true });
     }
@@ -42,7 +45,7 @@ const SignUp = () => {
       <form
         noValidate
         onSubmit={handleSubmit(submit)}
-        className='flex flex-col  justify-center items-center w-full mt-3 child:w-11/12 gap-y-5 bg-black text-white'>
+        className='flex flex-col  justify-center items-center w-full mt-3 child:w-11/12 gap-y-5  text-white'>
         {/* form title */}
         <h1 className='text-3xl'>Sign Up</h1>
         <div className='flex flex-col gap-y-3 child:input child:py-2 xs:child:py-5 child:px-1'>
@@ -93,7 +96,7 @@ const SignUp = () => {
             {...register("email", {
               required: true,
               pattern: {
-                value: /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g,
+                value: /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g,//regular expression to check email format
                 message: "invalid format",
               },
               validate: {
@@ -117,12 +120,13 @@ const SignUp = () => {
           {/* password input */}
           <input
             placeholder='Password'
+            // if show password is true ,input type must be text
             type={showPassword ? "text" : "password"}
             {...register("password", {
               required: true,
               pattern: {
                 value:
-                  /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,
+                  /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,//regular expression to check password format
                 message:
                   "Password must contain one digit from 1 to 9, one lowercase letter, one uppercase letter, one special character, no space, and it must be 8-16 characters long.",
               },

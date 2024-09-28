@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png"
 const NotFoundPage = () => {
+    // if the user search the wrong url this component will be appeard
     return ( 
         <div className="flex flex-col pb-5 items-center justify-center text-white ">
             <img className="w-1/2" src={logo} alt="" />

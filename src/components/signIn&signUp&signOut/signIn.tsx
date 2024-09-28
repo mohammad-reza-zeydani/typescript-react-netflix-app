@@ -8,7 +8,7 @@ import Loading from "../loading/Loading";
 import Form from "./form";
 const SignIn = () => {
   // destructure useGetUsers hook
-  const { data, error, isError, isLoading } = useGetSignedUpUsers(); // >>> getting the users that have signedUp before
+  const { data, error, isError, isLoading } = useGetSignedUpUsers(); // >>> getting the users that have signedUp before and pass the properties as props to Form component
   // destructure useGetSignedInUsers hook
   const { data: userData } = useGetSignedInUsers(); // >>> getting the users that have signedIn before
   // mutate user by this hook to add it into signIned users by post Request
@@ -31,15 +31,17 @@ const SignIn = () => {
       (item: TUserData) =>
         item.email === user.email && item.password === user.password,
     ); // >>> find exact user in signIned users
+    // if the user is signed up before and it hasen't signed in yet,mutate user and set user's token
     if (exist && !find) {
       mutate(user),
         localStorage.setItem("token", user.LastName + "ThisIsTokenCode");
-      navigate("/netflix", { replace: true });
+      navigate("/netflixDashboard", { replace: true });// after signIn navigate to neflixDashbord page
     } else {
-      !exist &&
+      // if the user hasn't  signed up yet show this alert
         alert(
           "The user account has not signed up yet,you need to sign up first then try again",
         );
+        // if the user has already signed in show this alert
       find && alert("the account has already signIned");
     }
   };

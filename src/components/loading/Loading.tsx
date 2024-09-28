@@ -1,4 +1,5 @@
 const Loading = () => {
+  // i used this loading in my sign in & sign out & sign up components
   return (
     <button
       disabled

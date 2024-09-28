@@ -1,4 +1,5 @@
 const SpinLoading = () => {
+  // i used this loading in my moreInfo component to be appeard before being mounted
     return (  
         <div className='flex items-center justify-center h-screen'>
         <svg

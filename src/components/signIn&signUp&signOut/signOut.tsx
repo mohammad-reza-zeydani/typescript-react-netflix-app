@@ -8,7 +8,7 @@ import Form from "./form";
 const SignOUt = () => {
   const navigate = useNavigate();
   // destructure useGetSignedInUsers hook
-  const { data, isError, error, isLoading } = useGetSignedInUsers(); // >>> getting the users that have signedIn before
+  const { data, isError, error, isLoading } = useGetSignedInUsers(); // >>> getting the users that have signedIn before and pass the properties as props to Form component
   // mutate user by this hook to remove it from signIned users by delete request
   const { mutate } = useSignOutUser();
   const form = useForm<TUserData>();
@@ -24,11 +24,13 @@ const SignOUt = () => {
       (item: TUserData) =>
         item.email === user.email && item.password === user.password,
     ); // >>> find the exact user in signIned users
+    // if the user's password and email is valid mutate it's id to signOut and navigte to home page
     if (exist) {
       mutate(exist.id);
       localStorage.removeItem("token");
       navigate("/", { replace: true });
     } else {
+      // the user's password and email is not valid ,so show this alert
       alert("User Not Found,The Email or Password Might Be Wrong");
     }
   };

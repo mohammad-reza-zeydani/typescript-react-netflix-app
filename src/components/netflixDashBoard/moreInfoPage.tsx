@@ -3,23 +3,28 @@ import { useParams, Link } from "react-router-dom";
 import BackButton from "./backBtn";
 import SpinLoading from "../loading/spinLoading";
 import { CastObject, TMovies } from "../../types/types";
-import { useEffect} from "react";
+import { useEffect } from "react";
 import { useMyContext } from "../context/context";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const MoreInfo = () => {
+  // get the movie id from url
   const { id } = useParams();
-  const { data, isLoading, error, isError } = useGetMovieById(id);
+  // destructure useGetMovieById
+  const { data, isLoading, error, isError } = useGetMovieById(id); // >> we pass the movie's id from url to our useGetMovieById hook to get the movie we want to have more info about
+  // our state from context to mark the movie we want to mark
   const { setMark, mark } = useMyContext();
+  // we use this package to have nice scroll animations
   useEffect(() => {
     AOS.init();
   }, []);
+  // at this function check if the movie is marked before ,dont mark it again but if it hasen't been marked before,mark it
   const handleMarkMovie = () => {
-    const find = mark.find((item: TMovies) => item.id === data.id);
+    const find = mark.find((item: TMovies) => item.id === data.id); // >> find the movie's id in mark state that matches the movie's id in the data
     if (find) {
       alert("this move is already marked");
     } else {
-      setMark([data, ...mark]);
+      setMark([data, ...mark]); // >> set new and previous movies that are marked before
       alert("the movie is marked");
     }
   };
@@ -30,7 +35,8 @@ const MoreInfo = () => {
         {/* back to previous page btn */}
         <BackButton />
         {/* mark movie link */}
-        <Link  className=' flex items-center' to={"/markedMoviesPage"}>
+        <Link className=' flex items-center' to={"/markedMoviesPage"}>
+          {/* mark svg */}
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'
@@ -42,6 +48,7 @@ const MoreInfo = () => {
               clipRule='evenodd'
             />
           </svg>
+          {/* the total number of the marked movies  */}
           <span className='text-white '>{mark.length}</span>
         </Link>
       </nav>
@@ -72,37 +79,38 @@ const MoreInfo = () => {
               <h3 className='text-sm md:text-base lg:text-lg max-h-48 sm:max-h-96 overflow-auto'>
                 {data.text}
               </h3>
-              {/* mark the movie btn */}
+              {/* mark the movie btn (this btn will mark the movie by onClick event and calling handleMarkMovie function)*/}
               <button
                 onClick={handleMarkMovie}
                 className='bg-red-700 p-1 rounded-md size-10 sm:size-12 text-black'>
-              {
-                mark.find((item:TMovies)=>item.id ===data.id) ? (
+                {/* if the movie hasn't been marked yet,show first svg,otherwise show second svg */}
+                {!mark.find((item: TMovies) => item.id === data.id) ? (
+                  // first svg
                   <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'
-                  fill='currentColor'>
-                  <path
-                    fillRule='evenodd'
-                    d='M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z'
-                    clipRule='evenodd'
-                  />
-                </svg>
-                ):(
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke-width='1.5'
+                    stroke='currentColor'>
+                    <path
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                      d='M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z'
+                    />
+                  </svg>
+                ) : (
+                  // second svg
                   <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke-width='1.5'
-                  stroke='currentColor'>
-                  <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    d='M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z'
-                  />
-                </svg>
-                )
-              }
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 24 24'
+                    fill='currentColor'>
+                    <path
+                      fillRule='evenodd'
+                      d='M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z'
+                      clipRule='evenodd'
+                    />
+                  </svg>
+                )}
               </button>
             </div>
           </div>

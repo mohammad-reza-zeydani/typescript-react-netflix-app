@@ -3,6 +3,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../../../src/style.css"
+// i used this loading for my movies cart that did not loaded yet
 const SkeletonLoading = () => {
     return (
         <Swiper

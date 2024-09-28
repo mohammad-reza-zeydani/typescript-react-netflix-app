@@ -36,7 +36,7 @@
     @apply rounded-md h-80 xs:h-96 animated-background image-animate
   }
   .image-animate {
-    @apply bg-gradient-to-r from-red-700 via-gray-400 to-red-500 animated-background
+    @apply bg-gradient-to-r from-black via-gray-400 to-gray-700 animated-background
   }
   .title {
     @apply text-2xl sm:text-3xl mb-10 pl-3 sm:pl-5

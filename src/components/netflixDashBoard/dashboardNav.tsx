@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useMyContext } from "../context/context";
 const DashboardNavigation = () => {
+  // this state is using in mobile design to open and close the nav menu
   const [open, setOpen] = useState<boolean>(false);
+  // set the searched words form search input
   const { setSearch } = useMyContext();
   return (
     <nav>
       {/* navigation mobile design section */}
       <section className='md:hidden px-3'>
         <div className='flex items-center justify-between text-white'>
-          {/* menu svg (open list)*/}
+          {/*if open is false show menu*/}
           {!open ? (
             <svg
               onClick={() => setOpen(!open)}
@@ -27,7 +29,7 @@ const DashboardNavigation = () => {
               />
             </svg>
           ) : (
-            // close svg (close list)
+            // if open is true show close menu svg
             <svg
               onClick={() => setOpen(!open)}
               xmlns='http://www.w3.org/2000/svg'
@@ -43,10 +45,11 @@ const DashboardNavigation = () => {
               />
             </svg>
           )}
-          {/* navigation search box */}
+          {/*mobile navigation form */}
           <form className='w-3/4 text-white'>
             <div className='relative'>
               <div className='absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none'>
+                {/* search svg */}
                 <svg
                   className='w-5'
                   aria-hidden='true'
@@ -62,6 +65,7 @@ const DashboardNavigation = () => {
                   />
                 </svg>
               </div>
+              {/* search input set searched value from user to our context as search result */}
               <input
                 type='search'
                 onChange={(e) => setSearch(e.target.value)}
@@ -71,7 +75,7 @@ const DashboardNavigation = () => {
             </div>
           </form>
         </div>
-        {/* list of movie genre links */}
+        {/* list of the movies genre links */}
         {open && (
           <ul className='flex flex-col text-white child:active-btn  mt-5 text-center child:pb-3 divide-y divide-slate-900'>
             <Link className='text-red-700' to={"/"}>
@@ -87,11 +91,11 @@ const DashboardNavigation = () => {
 
       {/* navigation desktop design section */}
       <section className='hidden md:flex items-center justify-between px-3'>
-        {/* navigation left content div */}
+        {/* navigation left contents*/}
         <div className='flex items-center md:gap-x-4 gap-x-8'>
           {/* netflix logo */}
-          <img className='w-32 lg:w-40' src={netflixLogo} alt='' />
-          {/* list of movie genre links*/}
+          <img className='w-32 lg:w-40' src={netflixLogo} alt='netflix logo' />
+          {/* list of the movies genre links*/}
           <ul className='flex items-center gap-x-4 text-white child:py-0 child:lg:text-2xl'>
             <Link className='text-red-700' to={"/"}>
               Home
@@ -102,11 +106,11 @@ const DashboardNavigation = () => {
             <Link to={"/"}>Horror</Link>
           </ul>
         </div>
-        {/* navigation right content div*/}
-
+        {/* navigation right contents*/}
         <form className='md:w-1/4 lg:w-1/3 text-white'>
           <div className='relative'>
             <div className='absolute inset-y-0 start-0 flex items-center ps-2 lg:ps-4 pointer-events-none'>
+              {/* search svg */}
               <svg
                 className='w-5 lg:w-6'
                 aria-hidden='true'
@@ -122,6 +126,7 @@ const DashboardNavigation = () => {
                 />
               </svg>
             </div>
+            {/* search input set searched value from user to our context as search result */}
             <input
               type='search'
               onChange={(e) => setSearch(e.target.value)}

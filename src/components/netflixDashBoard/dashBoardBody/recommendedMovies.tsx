@@ -5,19 +5,20 @@ import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import SkeletonLoading from "../../loading/skeleton";
 import { TGetMoviesDataProps , TMovies } from "../../../types/types";
+// getting the props from NetFlixDashBoard component
 const RecommendedMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) => {
   return (
     <div>
       {/* movie type title */}
       <h1 className='title'>Recommended</h1>
       {isError ? (
-        // the error message
+        // the error message if error is true
         <h1 className='error text-center'>{error?.message}</h1>
       ) : isLoading ? (
-        // loading component
+           // if loading is true appear skeleton loading
         <SkeletonLoading />
       ) : (
-        // main swiper
+        // main swiper element
         <Swiper
           slidesPerView={2.1}
           spaceBetween={10}
@@ -42,28 +43,29 @@ const RecommendedMovies = ({ data, error, isError, isLoading }:TGetMoviesDataPro
           modules={[Pagination]}
           className='mySwiper'>
           {data
-            //   the movies with recommended type
+            // filter data to map the movies with recommended type
             .filter((item: TMovies) => item.type === "recommended")
             .map((item: TMovies) => {
               return (
+                // swiper slide element
                 <SwiperSlide
                   style={{ borderColor: item.color }}
                   className='swiper-slide'>
-                  {/* cart main div */}
+                  {/*main div of the movie's cart*/}
                   <div className='flex flex-col w-full h-full items-start z-50 '>
                     {/* the movie image */}
                     <img
                       loading='lazy'
                       className='image'
                       src={item.image}
-                      alt=''
+                      alt={item.name}
                     />
                     {/* the movie name */}
                     <h1 className='mt-2 text-zinc-500'>{item.name}</h1>
                     {/* the movie genre */}
                     <h4 className='text-gray-700'>{item.genre}</h4>
                   </div>
-                  {/* more info Link */}
+                  {/* more info Link wich leads us to MoreInfo component */}
                   <Link
                     style={{ backgroundColor: item.btnColor }}
                     to={`/informaiton/${item.id}`}

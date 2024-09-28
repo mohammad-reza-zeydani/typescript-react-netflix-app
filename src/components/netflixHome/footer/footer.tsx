@@ -4,7 +4,7 @@ const Footer = () => {
     return ( 
             <footer className="flex flex-col  justify-between items-start xl:flex-row xl:items-center pl-10 md:px-20 lg:px-40 xl:px-56 text-neutral-200 underline py-3 md:py-12 border-t-4 sm:border-t-8 border-t-gray-800 ">
             <div>
-                {/*FAQ & Investor & Relations &Privacy & Speed Test */}
+                {/*FAQ & Investor Relations &Privacy & Speed Test */}
                 {
                     FooterData.slice(0,4).map((item:TFooter)=>{
                         return(

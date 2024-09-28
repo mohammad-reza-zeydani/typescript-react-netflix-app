@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 const useGetSignedUpUsers = () => {
-    // getting the users that have signedIn
+    // getting the users that have signedUp
     const {data,isLoading,isError,error}=useQuery({
         queryKey:["signedUp"],
         queryFn:async()=>{

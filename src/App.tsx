@@ -12,19 +12,23 @@ import MoreInfo from "./components/netflixDashBoard/moreInfoPage"
 import MarkedMovies from "./components/netflixDashBoard/dashBoardBody/markedMoviePage/markedMovies"
 function App() {
   return (
+    // context provider element
     <MyContextProvider>
        <Routes>
+        {/* private routes  */}
         <Route element={<PrivateRoutes/>}>
         <Route path="/netflix" element={<NetFlixDashBoard/>}/>
         <Route path="/sign_out"element={<SignOUt/>}/>
         <Route path="/informaiton/:id"element={<MoreInfo/>}/>
         <Route path="/markedMoviesPage"element={<MarkedMovies/>}/>
         </Route>
+        {/* non private routes */}
         <Route path="/" element={<Home/>}/>
         <Route path="/sign_up" element={<SignUp/>}/>
         <Route path="/sign_in" element={<SignIn/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
+      {/* footer input that i want to be appeard under all of my pages */}
       <Footer/>
       </MyContextProvider>
   )
