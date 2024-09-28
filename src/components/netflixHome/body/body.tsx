@@ -55,7 +55,8 @@ const Body = () => {
           })}
         </div>
       </section>
-      <div className=" flex justify-center items-center bg-black py-8 md:py-12 lg:py-20 myborder">
+      {/* body form */}
+      <form className=" flex justify-center items-center bg-black py-8 md:py-12 lg:py-20 myborder">
         <div className="flex flex-col items-start justify-center w-11/12 md:w-1/2  gap-y-2 md:gap-y-4 text-white">
         {/* input text */}
           <h3 className="text-base md:text-lg">
@@ -66,7 +67,7 @@ const Body = () => {
           {/* this link lead us to sign_up page */}
           <Link to={"/sign_up"} className="block bg-red-700 px-4 py-2 rounded-md active-btn">GetStarted</Link>
         </div>
-        </div>
+        </form>
     </>
   );
 };
