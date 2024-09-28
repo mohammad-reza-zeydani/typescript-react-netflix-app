@@ -1,4 +1,4 @@
-import useGetMovies from "../../../hooks/useGetMovies";
+import useGetMovies from "../../../hooks/useGetHooks/useGetMovies";
 import { useMyContext } from "../../context/context";
 import RecommendedMovies from "./recommendedMovies";
 import TrendMovies from "./trendMovies";

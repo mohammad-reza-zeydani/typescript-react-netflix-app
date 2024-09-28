@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
-import useGetSignedUpUsers from "../../hooks/useGetSignedUpUsers";
-import useGetSignedInUsers from "../../hooks/useGetSignedInUsers";
+import useGetSignedInUsers from "../../hooks/useGetHooks/useGetSignedInUsers";
+import useGetSignedUpUsers from "../../hooks/useGetHooks/useGetSignedUpUsers";
 import useSignInUser from "../../hooks/useSignInUser";
 import { TUserData } from "../../types/types";
 import { useNavigate} from "react-router-dom";

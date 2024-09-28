@@ -1,4 +1,4 @@
-import useGetMovieById from "../../hooks/useGetMovieById";
+import useGetMovieById from "../../hooks/useGetHooks/useGetMovieById";
 import { useParams, Link } from "react-router-dom";
 import BackButton from "./backBtn";
 import SpinLoading from "../loading/spinLoading";

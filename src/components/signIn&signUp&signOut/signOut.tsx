@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { TUserData } from "../../types/types";
 import Loading from "../loading/Loading";
-import useGetSignedInUsers from "../../hooks/useGetSignedInUsers";
+import useGetSignedInUsers from "../../hooks/useGetHooks/useGetSignedInUsers";
 import useSignOutUser from "../../hooks/useSignOutUser";
 import { useNavigate} from "react-router-dom";
 import Form from "./form";

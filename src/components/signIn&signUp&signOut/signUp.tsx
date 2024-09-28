@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import useSignUpUser from "../../hooks/useSignUpUser";
 import { TUserData } from "../../types/types";
 import { useNavigate } from "react-router-dom";
-import useGetSignedUpUsers from "../../hooks/useGetSignedUpUsers";
+import useGetSignedUpUsers from "../../hooks/useGetHooks/useGetSignedUpUsers";
 import Loading from "../loading/Loading";
 import { useState } from "react";
 const SignUp = () => {
