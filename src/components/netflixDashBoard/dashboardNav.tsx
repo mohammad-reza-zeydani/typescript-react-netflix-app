@@ -77,14 +77,14 @@ const DashboardNavigation = () => {
         </div>
         {/* list of the movies genre links */}
         {open && (
-          <ul className='flex flex-col text-white child:active-btn  mt-5 text-center child:pb-3 divide-y divide-slate-900'>
+          <ul className='flex flex-col  text-white child:active-btn  mt-5 text-center text-lg child:py-3 divide-y divide-slate-900'>
             <Link className='text-red-700' to={"/"}>
               Home
             </Link>
-            <Link to={"/"}>Animation</Link>
-            <Link to={"/"}>Action</Link>
-            <Link to={"/"}>Adventure</Link>
-            <Link to={"/"}>Horror</Link>
+            <Link to={"/animation"}>Animation</Link>
+            <Link to={"/action"}>Action</Link>
+            <Link to={"/adventure"}>Adventure</Link>
+            <Link to={"/horror"}>Horror</Link>
           </ul>
         )}
       </section>
@@ -96,14 +96,14 @@ const DashboardNavigation = () => {
           {/* netflix logo */}
           <img className='w-32 lg:w-40' src={netflixLogo} alt='netflix logo' />
           {/* list of the movies genre links*/}
-          <ul className='flex items-center gap-x-4 text-white child:py-0 child:lg:text-2xl'>
+          <ul className='flex items-center gap-x-4 text-white child:py-0 child:text-lg child:lg:text-2xl'>
             <Link className='text-red-700' to={"/"}>
               Home
             </Link>
-            <Link to={"/"}>Animation</Link>
-            <Link to={"/"}>Action</Link>
-            <Link to={"/"}>Adventure</Link>
-            <Link to={"/"}>Horror</Link>
+            <Link to={"/animation"}>Animation</Link>
+            <Link to={"/action"}>Action</Link>
+            <Link to={"/adventure"}>Adventure</Link>
+            <Link to={"/horror"}>Horror</Link>
           </ul>
         </div>
         {/* navigation right contents*/}
