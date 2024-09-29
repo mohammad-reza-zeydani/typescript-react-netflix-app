@@ -3,7 +3,7 @@ import useGetSignedInUsers from "../../hooks/useGetHooks/useGetSignedInUsers";
 import useGetSignedUpUsers from "../../hooks/useGetHooks/useGetSignedUpUsers";
 import useSignInUser from "../../hooks/useSignInUser";
 import { TUserData } from "../../types/types";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Loading from "../loading/Loading";
 import Form from "./form";
 const SignIn = () => {
@@ -35,13 +35,13 @@ const SignIn = () => {
     if (exist && !find) {
       mutate(user),
         localStorage.setItem("token", user.LastName + "ThisIsTokenCode");
-      navigate("/netflixDashboard", { replace: true });// after signIn navigate to neflixDashbord page
+      navigate("/netflixDashboard", { replace: true }); // after signIn navigate to neflixDashbord page
     } else {
       // if the user hasn't  signed up yet show this alert
-        alert(
-          "The user account has not signed up yet,you need to sign up first then try again",
-        );
-        // if the user has already signed in show this alert
+      alert(
+        "The user account has not signed up yet,you need to sign up first then try again",
+      );
+      // if the user has already signed in show this alert
       find && alert("the account has already signIned");
     }
   };
@@ -52,11 +52,15 @@ const SignIn = () => {
       {/* if loading is true show loading */}
       {isLoading && <Loading />}
       {/* sign in form */}
-      <form
-        noValidate
-        onSubmit={handleSubmit(submit)}
-        className='form'>
-     <Form register={register} errors={errors} title={"Sign In"} link="/sign_up" text="New To Netflix?" linkText="Sign Up Now"/>
+      <form noValidate onSubmit={handleSubmit(submit)} className='form'>
+        <Form
+          register={register}
+          errors={errors}
+          title={"Sign In"}
+          link='/sign_up'
+          text='New To Netflix?'
+          linkText='Sign Up Now'
+        />
       </form>
     </div>
   );

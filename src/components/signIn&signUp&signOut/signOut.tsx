@@ -3,7 +3,7 @@ import { TUserData } from "../../types/types";
 import Loading from "../loading/Loading";
 import useGetSignedInUsers from "../../hooks/useGetHooks/useGetSignedInUsers";
 import useSignOutUser from "../../hooks/useSignOutUser";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Form from "./form";
 const SignOUt = () => {
   const navigate = useNavigate();
@@ -41,11 +41,15 @@ const SignOUt = () => {
       {/* if loading is true show loading */}
       {isLoading && <Loading />}
       {/* sign out form */}
-      <form
-        noValidate
-        onSubmit={handleSubmit(submit)}
-        className='form'>
-        <Form register={register} errors={errors} title={"Sign Out"} link="/" text="dont you want to sign out ?" linkText="back to the home page"/>
+      <form noValidate onSubmit={handleSubmit(submit)} className='form'>
+        <Form
+          register={register}
+          errors={errors}
+          title={"Sign Out"}
+          link='/'
+          text='dont you want to sign out ?'
+          linkText='back to the home page'
+        />
       </form>
     </div>
   );

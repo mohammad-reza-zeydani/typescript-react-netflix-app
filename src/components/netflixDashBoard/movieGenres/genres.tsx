@@ -11,8 +11,8 @@ import BackButton from "../backBtn";
 const Genres = ({ genre }: { genre: string }) => {
   const { data, isLoading, isError, error } = useGetMovies();
   return (
-    <div className=" mb-14 sm:mb-16 ">
-        <BackButton/>
+    <div className=' mb-14 sm:mb-16 '>
+      <BackButton />
       {/* movie genre title */}
       <h1 className='title text-white'>{genre}</h1>
       {isError ? (

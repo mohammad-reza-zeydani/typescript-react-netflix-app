@@ -528,6 +528,54 @@
       "image": "https://lezwatchtv.com/wp-content/uploads/2016/03/Cast-of-The-100-the-100-tv-show-37904770-1920-1080.jpg",
       "color": " #496d91",
       "btnColor": "#285e95"
+    },
+    {
+      "id": 21,
+      "name": "Wednesday",
+      "cast": [
+        {
+          "name": "Jenna Ortega",
+          "avatar": "https://resize.prod.femina.ladmedia.fr/rblr/652,438/img/var/2024-09/1725617980_jenna-ortega-ne-veut-pas-d-une-james-bond-fe-minine.jpg"
+        },
+        {
+          "name": "Emma Myers",
+          "avatar": "https://www.nickiswift.com/img/gallery/emma-myers-how-the-newest-it-girl-made-it-in-hollywood/emma-myers-hopes-to-explore-other-roles-1673535159.jpg"
+        },
+        {
+          "name": "Percy Hynes White",
+          "avatar": "https://static1.moviewebimages.com/wordpress/wp-content/uploads/2023/09/percy-hynes-white.jpg"
+        }
+      ],
+      "genre": "horror",
+      "type": "series",
+      "text": "Wednesday is an American coming-of-age supernatural mystery television series based on the character Wednesday Addams by Charles Addams. Created by Alfred Gough and Miles Millar, it stars Jenna Ortega as the titular character, with Gwendoline Christie, Riki Lindhome, Jamie McShane, Hunter Doohan, Percy Hynes White, Emma Myers, Joy Sunday, Georgie Farmer, Naomi J. Ogawa, Christina Ricci, and Moosa Mostafa appearing in supporting roles. Four out of the eight episodes of the first season were directed by Tim Burton, who also serves as executive producer. It revolves around Wednesday Addams, who attempts to solve a murder mystery at her new school.[2]Burton was previously approached to direct the 1991 film The Addams Family and was involved with a cancelled stop-motion animated The Addams Family film. In October 2020, he was reported to be helming a television series, which was later given a series order by Netflix. Ortega was cast in part to represent the character's Latina heritage. Ricci, who had played the titular character in the 1991 film and its 1993 sequel Addams Family Values, was asked by Burton to join the series in a supporting role. Filming took place in Romania between September 2021 and March 2022. ",
+      "image": "https://wallpapercave.com/wp/wp11755847.jpg",
+      "color": "#8844f8",
+      "btnColor": "#7b2bff"
+    },
+    {
+      "id": 22,
+      "name": "The Witcher",
+      "cast": [
+        {
+          "name": "Henry Cavill",
+          "avatar": "https://ca-times.brightspotcdn.com/dims4/default/31f0da9/2147483647/strip/true/crop/2836x2000+0+0/resize/1200x846!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fdc%2F61%2Fc19d543f43a8b6634e43ae19d377%2Ffilm-superman-11403.jpg"
+        },
+        {
+          "name": "Anya Chalotra",
+          "avatar": "https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/2/9/6/1332296_anyachalotra_sot2020_2000x1333_creditpetersearle_9491.jpg"
+        },
+        {
+          "name": "Freya Allan",
+          "avatar": "https://vz.cnwimg.com/thumb-900x/wp-content/uploads/2022/06/Freya-Allan.jpg"
+        }
+      ],
+      "genre": "adventure",
+      "type": "series",
+      "text": "The Witcher is a fantasy drama television series created by Lauren Schmidt Hissrich for Netflix. It is based on the book series[a] by Polish author Andrzej Sapkowski. Set on a fictional, medieval-inspired landmass known as the Continent, The Witcher explores the legend of Geralt of Rivia, Yennefer of Vengerberg and Princess Ciri. It stars Henry Cavill, Anya Chalotra, and Freya Allan.The first season, consisting of eight episodes, was released on Netflix on December 20, 2019. It was based on The Last Wish and Sword of Destiny, which are collections of short stories that precede the main The Witcher saga. The second season, also consisting of eight episodes and based on the novel Blood of Elves, was released on December 17, 2021. In September 2021, Netflix renewed the series for a third season, which also consists of eight episodes, released in two volumes on June 29 and July 27, 2023. This will be followed by a fourth season, with Liam Hemsworth taking over the role of Geralt of Rivia. In April 2024, the series was renewed for its fifth and final season. ",
+      "image": "https://images.wallpapersden.com/image/download/the-witcher-fan-art_a2xsZW2UmZqaraWkpJRmbmdlrWZlbWU.jpg",
+      "color": "#cbcbcb ",
+      "btnColor": "#a4a4a4"
     }
   ]
 }

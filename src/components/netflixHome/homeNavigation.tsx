@@ -3,7 +3,7 @@ import netflix from "../../assets/images/netflix-header.jpg";
 import { THeader } from "../../types/types";
 import { Link } from "react-router-dom";
 const Navigation = () => {
-//  this object is to select  language
+  //  this object is to select  language
   const language: THeader[] = [
     {
       id: 1,
@@ -18,7 +18,7 @@ const Navigation = () => {
   return (
     <nav className=' relative flex flex-col items-center text-white bg-gradient-to-r from-gray-900 via-gray900 to-gray-800 myborder'>
       {/* navigation h section */}
-      <section className='absolute w-size flex justify-between items-center'>
+      <section className='absolute w-[95%] sm:w-11/12 lg:w-5/6 flex justify-between items-center'>
         {/* navigation leaft content */}
         <div>
           {/* netflix logo */}
@@ -39,7 +39,9 @@ const Navigation = () => {
           {token ? (
             // show dashboard and signOut links if there is token
             <>
-              <Link to={"/netflixDashboard"} className='header-links font-serif'>
+              <Link
+                to={"/netflixDashboard"}
+                className='header-links font-serif'>
                 Dashboard
               </Link>
               <Link to={"/sign_out"} className='header-links font-serif'>
@@ -75,7 +77,9 @@ const Navigation = () => {
             type='email'
             placeholder='Email address'
           />
-          <Link to={"/sign_up"} className='flex items-center justify-center font-extralight bg-red-700 active-btn'>
+          <Link
+            to={"/sign_up"}
+            className='flex items-center justify-center font-extralight bg-red-700 active-btn'>
             <div>Get Started</div>
           </Link>
         </form>

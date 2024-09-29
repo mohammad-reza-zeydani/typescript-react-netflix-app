@@ -7,7 +7,7 @@ import Loading from "../loading/Loading";
 import { useState } from "react";
 const SignUp = () => {
   // if check box  is checked by the user,set show password true and show the password
-  const [showPassword, setShowPassword ] = useState<boolean>(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   // destructure useGetSignedUpUsers hook
   const { data, error, isError, isLoading } = useGetSignedUpUsers(); // >>> getting the users that have signedUp before
   const form = useForm<TUserData>();
@@ -26,7 +26,7 @@ const SignUp = () => {
       (item: TUserData) =>
         item.email === user.email && item.password === user.password,
     ); // >>> find the exact user in signedUp users
-    // if the user is exist in signedUp users dont mutate user 
+    // if the user is exist in signedUp users dont mutate user
     if (exist) {
       alert("this user has already signed up,you need to sign in");
     } else {
@@ -96,7 +96,7 @@ const SignUp = () => {
             {...register("email", {
               required: true,
               pattern: {
-                value: /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g,//regular expression to check email format
+                value: /[\w]*@*[a-z]*\.*[\w]{5,}(\.)*(com)*(@gmail\.com)/g, //regular expression to check email format
                 message: "invalid format",
               },
               validate: {
@@ -126,7 +126,7 @@ const SignUp = () => {
               required: true,
               pattern: {
                 value:
-                  /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,//regular expression to check password format
+                  /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/, //regular expression to check password format
                 message:
                   "Password must contain one digit from 1 to 9, one lowercase letter, one uppercase letter, one special character, no space, and it must be 8-16 characters long.",
               },

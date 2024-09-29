@@ -4,9 +4,14 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import SkeletonLoading from "../../loading/skeleton";
-import { TGetMoviesDataProps , TMovies } from "../../../types/types";
+import { TGetMoviesDataProps, TMovies } from "../../../types/types";
 // getting the props from NetFlixDashBoard component
-const RecommendedMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) => {
+const RecommendedMovies = ({
+  data,
+  error,
+  isError,
+  isLoading,
+}: TGetMoviesDataProps) => {
   return (
     <div>
       {/* movie type title */}
@@ -15,7 +20,7 @@ const RecommendedMovies = ({ data, error, isError, isLoading }:TGetMoviesDataPro
         // the error message if error is true
         <h1 className='error text-center'>{error?.message}</h1>
       ) : isLoading ? (
-           // if loading is true appear skeleton loading
+        // if loading is true appear skeleton loading
         <SkeletonLoading />
       ) : (
         // main swiper element

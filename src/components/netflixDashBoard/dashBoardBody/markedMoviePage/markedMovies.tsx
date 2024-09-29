@@ -6,7 +6,7 @@ const MarkedMovies = () => {
   const { mark, handleDelete } = useMyContext();
   return (
     <>
-    {/* back to home page btn */}
+      {/* back to home page btn */}
       <BackButton />
       <div className='container px-1 xs:px-8 mb-20 mx-auto'>
         {/* if mark is empty show this message */}
@@ -22,8 +22,12 @@ const MarkedMovies = () => {
                 <div
                   style={{ borderColor: item.color }}
                   className='border sm:border-2 rounded-lg relative'>
-                    {/* the image of the movie we got from context */}
-                  <img  className='rounded-lg image-animate' src={item.image} alt={item.name} />
+                  {/* the image of the movie we got from context */}
+                  <img
+                    className='rounded-lg image-animate'
+                    src={item.image}
+                    alt={item.name}
+                  />
                   {/* Mark svg ,this svg has onClick event that has handleDelete function to delete the movie*/}
                   <svg
                     onClick={() => handleDelete(item.id)}

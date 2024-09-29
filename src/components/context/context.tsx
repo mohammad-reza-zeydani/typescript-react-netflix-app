@@ -18,7 +18,7 @@ const MyContextProvider = ({ children }: { children: React.ReactNode }) => {
   }, [mark]);
   //   delete the movie we want to delete with this function
   const handleDelete = (id: number) => {
-    const filter = mark.filter((item: TMovies) => item.id != id);// >> find the marked movie's id that doesen't match the id of the movie we want to delete
+    const filter = mark.filter((item: TMovies) => item.id != id); // >> find the marked movie's id that doesen't match the id of the movie we want to delete
     setMark(filter); //>> set new marked movies list
   };
   return (

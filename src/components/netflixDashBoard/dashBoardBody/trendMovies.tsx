@@ -4,20 +4,25 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import SkeletonLoading from "../../loading/skeleton";
-import { TGetMoviesDataProps , TMovies } from "../../../types/types";
-const TrendMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) => {
+import { TGetMoviesDataProps, TMovies } from "../../../types/types";
+const TrendMovies = ({
+  data,
+  error,
+  isError,
+  isLoading,
+}: TGetMoviesDataProps) => {
   return (
     <div>
-        {/* movie type title */}
-    <h1 className="title">Trends</h1>
+      {/* movie type title */}
+      <h1 className='title'>Trends</h1>
       {isError ? (
         // the error message if error is true
         <h1 className='error text-center'>{error?.message}</h1>
       ) : isLoading ? (
-         // if loading is true appear skeleton loading
-        <SkeletonLoading/>
+        // if loading is true appear skeleton loading
+        <SkeletonLoading />
       ) : (
-         // main swiper element
+        // main swiper element
         <Swiper
           slidesPerView={2.1}
           spaceBetween={10}
@@ -42,15 +47,15 @@ const TrendMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) =>
           modules={[Pagination]}
           className='mySwiper'>
           {data
-   // filter data to map the movies with trend type
+            // filter data to map the movies with trend type
             .filter((item: TMovies) => item.type === "trend")
             .map((item: TMovies) => {
               return (
-                 // swiper slide element
+                // swiper slide element
                 <SwiperSlide
-                  style={{borderColor: item.color }}
+                  style={{ borderColor: item.color }}
                   className='swiper-slide'>
-                    {/*main div of the movie's cart*/}
+                  {/*main div of the movie's cart*/}
                   <div className='flex flex-col w-full h-full items-start z-50 '>
                     {/* the movie image */}
                     <img
@@ -60,19 +65,17 @@ const TrendMovies = ({ data, error, isError, isLoading }:TGetMoviesDataProps) =>
                       alt={item.name}
                     />
                     {/* the movie name */}
-                   <h1 className="mt-2 text-zinc-500">{item.name}</h1>
-                   {/* the movie genre */}
-                   <h4 className='text-gray-700'>{item.genre}</h4>
+                    <h1 className='mt-2 text-zinc-500'>{item.name}</h1>
+                    {/* the movie genre */}
+                    <h4 className='text-gray-700'>{item.genre}</h4>
                   </div>
-                 {/* more info Link wich leads us to MoreInfo component */}
+                  {/* more info Link wich leads us to MoreInfo component */}
                   <Link
                     style={{ backgroundColor: item.btnColor }}
                     to={`/informaiton/${item.id}`}
                     className='py-0 rounded-lg hover:scale-110 transition-transform'>
                     {/* more info btn */}
-                    <button className='moreInfo-btn'>
-                      More Info
-                    </button>
+                    <button className='moreInfo-btn'>More Info</button>
                   </Link>
                 </SwiperSlide>
               );
