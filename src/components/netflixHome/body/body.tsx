@@ -47,7 +47,7 @@ const Body = () => {
           Frequntley Asked Questions
         </h1>
         {/* accordion main div */}
-        <div className='w-full child:pt-3'>
+        <div className='w-full child:pt-2 child:xs:pt-3'>
           {AccordionData.map((item) => {
             return (
               <Accordion key={item.id} title={item.title} text={item.text} />
@@ -65,7 +65,7 @@ const Body = () => {
           </h3>
           <input placeholder="Email address" className="w-full input p-3 md:p-5" type="text" />
           {/* this link lead us to sign_up page */}
-          <Link to={"/sign_up"} className="block bg-red-700 px-4 py-2 rounded-md active-btn">GetStarted</Link>
+          <Link to={"/sign_up"} className="block bg-red-700 px-4 py-2 rounded-md active-btn sm:text-lg font-extralight">Get Started</Link>
         </div>
         </form>
     </>

@@ -27,7 +27,7 @@ const Navigation = () => {
         {/* navigation right content */}
         <div className='flex items-center gap-x-1 xs:gap-x-2 z-20'>
           {/*select the language*/}
-          <select className='text-sm sm:text-lg border border-white bg-transparent px-1 py-px sm:px-2 sm:py-1'>
+          <select className='text-sm  sm:text-lg font-serif border border-white bg-transparent px-1 py-px sm:px-2 sm:py-1'>
             {language.map((lang) => {
               return (
                 <option className=' text-zinc-400' key={lang.id}>
@@ -39,10 +39,10 @@ const Navigation = () => {
           {token ? (
             // show dashboard and signOut links if there is token
             <>
-              <Link to={"/netflixDashboard"} className='header-links'>
+              <Link to={"/netflixDashboard"} className='header-links font-serif'>
                 Dashboard
               </Link>
-              <Link to={"/sign_out"} className='header-links'>
+              <Link to={"/sign_out"} className='header-links font-serif'>
                 Sign Out
               </Link>
             </>
@@ -69,13 +69,13 @@ const Navigation = () => {
           </p>
         </div>
         {/* navigation search input and get stareted link (signUp) */}
-        <form className='flex flex-col gap-y-2 sm:flex-row w-full items-center justify-center child:p-2 child:h-8 child:sm:h-12'>
+        <form className='flex flex-col gap-y-2 sm:flex-row w-full items-center justify-center child:text-lg child:p-2 child:h-8 child:sm:h-12'>
           <input
             className='w-5/6 sm:w-4/6 lg:w-5/6 outline-none text-black'
             type='email'
-            placeholder='search email'
+            placeholder='Email address'
           />
-          <Link to={"/sign_up"} className='flex items-center justify-center bg-red-700 text-sm active-btn'>
+          <Link to={"/sign_up"} className='flex items-center justify-center font-extralight bg-red-700 active-btn'>
             <div>Get Started</div>
           </Link>
         </form>

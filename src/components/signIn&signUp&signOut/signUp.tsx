@@ -139,7 +139,7 @@ const SignUp = () => {
           {errors.password?.message ? errors.password.message : null}
         </div>
         {/* form footer */}
-        <div className='flex flex-col gap-y-2 xs:flex-row items-center justify-between gap-x-3 xs:gap-x-3 text-base xs:text-xl'>
+        <div className='flex flex-col gap-y-4 xs:flex-row items-center justify-between gap-x-3 xs:gap-x-3 text-base xs:text-xl'>
           <div className='flex items-center gap-x-3'>
             {/* showing or not showing password input */}
             <span className='text-xs xs:text-sm'>Show Password</span>
@@ -160,7 +160,7 @@ const SignUp = () => {
           </div>
           {/*submit input*/}
           <input
-            className='bg-red-700 w-1/3 xl:w-1/2 py-1 px-1 text-xs xs:text-base rounded-md cursor-pointer active-btn '
+            className='bg-red-700 font-semibold  w-1/2 xs:w-1/4 py py-2 px-1 text-lg md:text-xl rounded-md cursor-pointer active-btn '
             value={"Sign Up"}
             type='submit'
           />

@@ -57,7 +57,7 @@ const Form = ({register,errors,title,link,text,linkText}:TSignInAndSignOut) => {
           {/* submit input */}
         </div>
         <input
-          className='w-full bg-red-700 active-btn text-center py-3 xs:py-4 text-xl md:text-2xl rounded-md cursor-pointer'
+          className='w-full bg-red-700 active-btn text-center font-semibold py-3 xs:py-4 text-xl md:text-2xl rounded-md cursor-pointer'
           value={title}
           type='submit'
         />
