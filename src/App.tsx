@@ -9,7 +9,7 @@ import NotFoundPage from "./components/notFound";
 import PrivateRoutes from "./components/privateRoutes";
 import MyContextProvider from "./components/context/context";
 import MoreInfo from "./components/netflixDashBoard/moreInfoPage";
-import MarkedMovies from "./components/netflixDashBoard/dashBoardBody/markedMoviePage/markedMovies";
+import MarkedMovies from "./components/netflixDashBoard/markedMoviePage/markedMovies";
 import Action from "./components/netflixDashBoard/movieGenres/action";
 import Adventure from "./components/netflixDashBoard/movieGenres/adventure";
 import Animation from "./components/netflixDashBoard/movieGenres/animation";

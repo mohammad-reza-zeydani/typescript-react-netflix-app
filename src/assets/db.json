@@ -7,20 +7,12 @@
       "password": "saraMordi$22",
       "gender": "female",
       "id": 1
-    },
-    {
-      "firstName": "alireza",
-      "LastName": "zeydani",
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002MRZ2002$",
-      "gender": "male",
-      "id": 2
     }
   ],
   "signIn": [
     {
-      "email": "mmdzyzw03@gmail.com",
-      "password": "mrz2002MRZ2002$",
+      "email": "saraMORADI22@gmail.com",
+      "password": "saraMordi$22",
       "id": 1
     }
   ],

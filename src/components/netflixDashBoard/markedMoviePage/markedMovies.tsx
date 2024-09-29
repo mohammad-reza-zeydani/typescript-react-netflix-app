@@ -1,6 +1,6 @@
-import { TMovies } from "../../../../types/types";
-import { useMyContext } from "../../../context/context";
-import BackButton from "../../backBtn";
+import { TMovies } from "../../../types/types";
+import { useMyContext } from "../../context/context";
+import BackButton from "../backBtn";
 const MarkedMovies = () => {
   //at this context ,mark has marked movies and handleDelete is to remove marked movie from marked list
   const { mark, handleDelete } = useMyContext();
@@ -15,7 +15,7 @@ const MarkedMovies = () => {
             There are no any marked movies
           </h1>
         ) : (
-          <div className=' grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 lg:gap-3 text-white'>
+          <div className=' grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-3 text-white'>
             {/* if mark is not empty show the contents */}
             {mark?.map((item: TMovies) => {
               return (
@@ -24,7 +24,7 @@ const MarkedMovies = () => {
                   className='border sm:border-2 rounded-lg relative'>
                   {/* the image of the movie we got from context */}
                   <img
-                    className='rounded-lg image-animate'
+                    className='rounded-lg image-animate w-full h-44 md:h-52'
                     src={item.image}
                     alt={item.name}
                   />
