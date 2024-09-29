@@ -47,11 +47,9 @@
   .moreInfo-btn {
     @apply py-1 px-6 xs:px-4 sm:px-5 text-base text-zinc-900 active:active-btn active:rounded-lg
   }
-}
-@layer base {
-  a{
+  .footer{
     @apply block pt-3 lg:pt-5 text-lg lg:text-xl active:text-neutral-800
-  };
+  }
 }
 .animated-background {
   background-size: 400%;

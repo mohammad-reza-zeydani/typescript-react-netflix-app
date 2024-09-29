@@ -8,7 +8,7 @@ const Footer = () => {
                 {
                     FooterData.slice(0,4).map((item:TFooter)=>{
                         return(
-                            <a href="#">{item.text}</a>
+                            <a className="footer" href="#">{item.text}</a>
                         )
                     })
                 }
@@ -18,7 +18,7 @@ const Footer = () => {
                 {
                     FooterData.slice(4,8).map((item:TFooter)=>{
                         return(
-                            <a  href="#">{item.text}</a>
+                            <a className="footer"  href="#">{item.text}</a>
                         )
                     })
                 }
@@ -28,7 +28,7 @@ const Footer = () => {
                 {
                     FooterData.slice(8,12).map((item:TFooter)=>{
                         return(
-                            <a href="#">{item.text}</a>
+                            <a className="footer" href="#">{item.text}</a>
                         )
                     })
                 }
@@ -38,7 +38,7 @@ const Footer = () => {
                 {
                     FooterData.slice(12,16).map((item:TFooter)=>{
                         return(
-                            <a href="#">{item.text}</a>
+                            <a className="footer" href="#">{item.text}</a>
                         )
                     })
                 }

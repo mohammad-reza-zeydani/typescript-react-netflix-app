@@ -8,7 +8,7 @@ const Accordion = ({ text, title }: TAccordion) => {
       {/* Accordion open & close button and the title */}
         <button
           onClick={() => setOpen(!open)}
-          className='z-50 w-full active:bg-blue-500 focus:bg-neutral-800 bg-neutral-800/40 flex justify-between items-start px-2 py-2 xs:p-3 sm:p-5 cursor-pointer'>
+          className='flex justify-between items-center z-50 w-full active:bg-blue-500 focus:bg-neutral-800 bg-neutral-800/40  px-2 py-2 xs:p-3 sm:p-5 cursor-pointer'>
           <h1 className='font-sans font-bold text-sm xs:text-base lg:text-xl'>
             {title}
           </h1>

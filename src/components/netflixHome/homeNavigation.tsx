@@ -69,16 +69,16 @@ const Navigation = () => {
           </p>
         </div>
         {/* navigation search input and get stareted link (signUp) */}
-        <div className='flex flex-col gap-y-2 sm:flex-row w-full items-center justify-center child:py-1 child:md:py-3 child:px-1 child:md:px-5'>
+        <form className='flex flex-col gap-y-2 sm:flex-row w-full items-center justify-center child:p-2 child:h-8 child:sm:h-12'>
           <input
             className='w-5/6 sm:w-4/6 lg:w-5/6 outline-none text-black'
             type='email'
             placeholder='search email'
           />
-          <Link to={"/sign_up"} className='bg-red-700 text-base active-btn '>
-            Get Started
+          <Link to={"/sign_up"} className='flex items-center justify-center bg-red-700 text-sm active-btn'>
+            <div>Get Started</div>
           </Link>
-        </div>
+        </form>
       </section>
       {/* navigation background image */}
       <img
