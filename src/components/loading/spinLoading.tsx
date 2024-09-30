@@ -4,7 +4,7 @@ const SpinLoading = () => {
     <div className='flex items-center justify-center h-screen'>
       <svg
         aria-hidden='true'
-        className=' w-32 h-32 text-white animate-spin  fill-red-700'
+        className=' w-32 h-32 text-white animate-spin  fill-red-800'
         viewBox='0 0 100 101'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'>
