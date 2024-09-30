@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+@layer components{
+  .input {
+    @apply bg-neutral-600 border border-neutral-500 outline-none focus:outline-white rounded-md 
+  }
+  .active-btn{
+    @apply active:bg-blue-500 active:text-white
+  }
+  .active-link {
+    @apply active:text-blue-500
+  }
+  .error {
+    @apply text-xl p-2 sm:text-2xl bg-red-500 animate-pulse top-10
+  }
+  .accordion {
+    @apply pl-2 xs:pl-3 py-5 sm:pl-5 bg-neutral-900 transition-all text-sm sm:text-base lg:text-lg
+  }
+  .myborder{
+    @apply  border-b-4 sm:border-b-8 border-b-gray-800
+  }
+  .body {
+    @apply  gap-y-5 md:gap-y-3 px-5 py-4 lg:px-20 xl:px-32 
+  }
+  .header-links {
+    @apply bg-red-700 text-xs xs:text-sm sm:text-lg px-2 py-1 active-btn sm:px-5 sm:py-1 rounded-md
+  }
+  .paragraph {
+    @apply text-white font-sans text-center  text-sm xs:text-lg sm:text-xl lg:text-2xl
+  }
+  .form {
+    @apply flex flex-col gap-y-6 justify-center items-start w-11/12 sm:w-1/2 lg:w-1/3 px-2 xs:px-8 sm:px-12 py-5  text-white
+  }
+  .image{
+    @apply rounded-md h-80 xs:h-96 animated-background image-animate
+  }
+  .image-animate {
+    @apply bg-gradient-to-r from-black via-gray-400 to-gray-700 animated-background
+  }
+  .title {
+    @apply text-2xl sm:text-3xl mb-10 pl-3 sm:pl-5
+  }
+  .swiper-slide {
+    @apply flex flex-col bg-black border-2  gap-y-2 h-80 xs:h-96 p-2 rounded-md
+  }
+  .moreInfo-btn {
+    @apply py-1 px-6 xs:px-4 sm:px-5 text-base text-zinc-900 active:active-btn active:rounded-lg
+  }
+  .footer{
+    @apply block pt-3 lg:pt-5 text-lg lg:text-xl active:text-blue-500
+  }
+}
+.animated-background {
+  background-size: 400%;
+  -webkit-animation: animation 3s ease infinite;
+  -moz-animation: animation 3s ease infinite;
+  animation: animation 3s ease infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+      background-position: 0% 50%;
+  }
+  
+  50% {
+      background-position: 100% 50%;
+  }
+}

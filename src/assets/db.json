@@ -1,0 +1,573 @@
+{
+  "signUp": [
+    {
+      "firstName": "sara",
+      "LastName": "moradi",
+      "email": "saraMORADI22@gmail.com",
+      "password": "saraMordi$22",
+      "gender": "female",
+      "id": 1
+    }
+  ],
+  "signIn": [
+    {
+      "email": "saraMORADI22@gmail.com",
+      "password": "saraMordi$22",
+      "id": 1
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "Mad max",
+      "cast": [
+        {
+          "name": "Charlize Theron",
+          "avatar": "https://www.hdwallpapers.in/download/charlize_theron_4k-1920x1080.jpg"
+        },
+        {
+          "name": "Tom Hardy ",
+          "avatar": "https://wallpapercave.com/wp/wp1820223.jpg"
+        },
+        {
+          "name": "Zoë Kravitz",
+          "avatar": "https://www.hdwallpapers.in/download/catwoman_dc_comics_zoe_kravitz_hd_the_batman-HD.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "trend",
+      "text": "Mad Max is an Australian media franchise created by George Miller and Byron Kennedy. It centers on a series of post-apocalyptic and dystopian action films. The franchise began in 1979 with Mad Max, and was followed by three sequels: Mad Max 2 (1981; released in the United States as The Road Warrior), Mad Max Beyond Thunderdome (1985) and Mad Max: Fury Road (2015); Miller directed or co-directed all four films. A spin-off, Furiosa: A Mad Max Saga, was released in 2024 and was also directed by Miller. Mel Gibson originally portrayed the series' title character, Max Rockatansky, in the first three films, while Tom Hardy and Jacob Tomuri portrayed the character in the later two films",
+      "image": "https://w0.peakpx.com/wallpaper/452/22/HD-wallpaper-movie-mad-max-fury-road-charlize-theron-imperator-furiosa-max-rockatansky-tom-hardy.jpg",
+      "color": "#e69a8a",
+      "btnColor": "#cf614a"
+    },
+    {
+      "id": 2,
+      "name": "Tomb raider",
+      "cast": [
+        {
+          "name": "Alicia Vikander",
+          "avatar": "https://www.hdwallpapers.in/download/alicia_vikander_lara_croft_tomb_raider_4k-1920x1080.jpg"
+        },
+        {
+          "name": "Daniel Wu",
+          "avatar": "https://c4.wallpaperflare.com/wallpaper/208/201/248/daniel-wu-sunny-into-the-badlands-4k-wallpaper-preview.jpg"
+        },
+        {
+          "name": "Walton Goggins",
+          "avatar": "https://people.com/thmb/esbihbzMMr26zw7vy1N-JDiYaYY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(736x300:738x302)/walton-goggins-fallout-premiere-041024-1-54b1f123170a443897dd62069e2be717.jpg"
+        }
+      ],
+      "genre": "adventure",
+      "type": "trend",
+      "text": "Tomb Raider is a 2018 action-adventure film directed by Roar Uthaug, with a screenplay by Geneva Robertson-Dworet and Alastair Siddons, from a story by Evan Daugherty and Robertson-Dworet. An American and British co-production, it is based on the 2013 video game of the same name, with some elements of its sequel by Crystal Dynamics, a reboot, and the third installment in the Tomb Raider film series. The film stars Alicia Vikander as Lara Croft, who embarks on a perilous journey to her father's last-known destination, hoping to solve the mystery of his disappearance. Dominic West, Walton Goggins, Daniel Wu, and Kristin Scott Thomas appear in supporting roles. ",
+      "image": "https://papers.co/wallpaper/papers.co-be39-tomb-raider-film-hero-art-illustration-25-wallpaper.jpg",
+      "color": "#4dc3f3 ",
+      "btnColor": "#3093f0"
+    },
+    {
+      "id": 3,
+      "name": "World war Z",
+      "cast": [
+        {
+          "name": "Brad Pitt",
+          "avatar": "https://ychef.files.bbci.co.uk/1280x720/p0cr3znc.jpg"
+        },
+        {
+          "name": "Mireille Enos",
+          "avatar": "https://external-preview.redd.it/for-all-mankind-season-5-casts-mireille-enos-reuniting-her-v0-P9IOKDA_Wtjq3i1nl0KhgUemrWomHUtTzQ-HEzdaSrU.jpg?width=640&crop=smart&auto=webp&s=bc6cab5628ce0dd12f2cb6e56c0722ab21c0a330"
+        },
+        {
+          "name": "Matthew Fox",
+          "avatar": "https://deadline.com/wp-content/uploads/2024/08/MAtthew-Fox-.jpg"
+        }
+      ],
+      "genre": "horror",
+      "type": "trend",
+      "text": "World War Z is a 2013 American action horror film directed by Marc Forster, with a screenplay by Matthew Michael Carnahan, Drew Goddard, and Damon Lindelof, from a story by Carnahan and J. Michael Straczynski, inspired by the 2006 novel of the same name by Max Brooks. It stars Brad Pitt as Gerry Lane, a former United Nations investigator who travels the world seeking a solution for a sudden zombie apocalypse,[12] along with ensemble supporting cast including Mireille Enos and James Badge Dale. ",
+      "image": "https://wallpaper.forfun.com/fetch/c2/c28be60fce717995347bfff6eeb799f3.jpeg",
+      "color": "#f16464",
+      "btnColor": "#f50909"
+    },
+    {
+      "id": 4,
+      "name": "Seven",
+      "cast": [
+        {
+          "name": "Brad Pitt",
+          "avatar": "https://ychef.files.bbci.co.uk/1280x720/p0cr3znc.jpg"
+        },
+        {
+          "name": "Morgan Freeman",
+          "avatar": "https://historyuk.s3.eu-west-2.amazonaws.com/s3fs-public/styles/768x432/public/2022-01/morgan%20freeman-min.jpg?itok=yEZRDGSQ"
+        },
+        {
+          "name": "Kevin Spacey",
+          "avatar": "https://image.cnbcfm.com/api/v1/image/104806542-GettyImages-687756076-kevin-spacey.jpg?v=1563395560&w=1920&h=1080"
+        }
+      ],
+      "genre": "horror",
+      "type": "recommended",
+      "text": "Seven (often stylized as Se7en)[1] is a 1995 American crime thriller film directed by David Fincher and written by Andrew Kevin Walker. It stars Brad Pitt and Morgan Freeman, with Gwyneth Paltrow, and John C. McGinley in supporting roles. Set in an unnamed, crime-ridden city, Seven's narrative follows disenchanted, nearly retired detective William Somerset (Freeman) and his newly transferred partner David Mills (Pitt) as they try to stop a serial killer from committing a series of murders based on the seven deadly sins. ",
+      "image": "https://facts.net/wp-content/uploads/2023/06/35-facts-about-the-movie-se7en-1687246188.jpeg",
+      "color": "#735323",
+      "btnColor": "#c89341"
+    },
+    {
+      "id": 5,
+      "name": "saving ryan",
+      "cast": [
+        {
+          "name": "Tom Hanks",
+          "avatar": "https://www.poynter.org/wp-content/uploads/2023/01/AP_23010105050150.jpg"
+        },
+        {
+          "name": "Matt Damon",
+          "avatar": "https://media.cnn.com/api/v1/images/stellar/prod/230713051631-01-matt-damon-depression.jpg?c=original"
+        },
+        {
+          "name": "Tom Sizemore",
+          "avatar": "https://i.abcnewsfe.com/a/833fef2c-dab5-4c2c-957b-1e04c5b77c22/tom-sizemore-230_hpMain_20230227-212309_4x3.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "recommended",
+      "text": "Saving Private Ryan is a 1998 American epic war film directed by Steven Spielberg and written by Robert Rodat. Set in 1944 in Normandy, France, during World War II, it follows a group of soldiers, led by Captain John Miller (Tom Hanks), on a mission to locate Private James Francis Ryan (Matt Damon) and bring him home safely after his three brothers have been killed in action. The cast also includes Edward Burns, Tom Sizemore, Barry Pepper, Giovanni Ribisi, Vin Diesel, Adam Goldberg and Jeremy Davies.",
+      "image": "https://stmawesevents.seatlab.com/storage/events/thumbnail/1809218210667da80f6a14b.jpg",
+      "color": "#5af390 ",
+      "btnColor": "#00c444"
+    },
+    {
+      "id": 6,
+      "name": "Gladiator",
+      "cast": [
+        {
+          "name": "Russell Crowe",
+          "avatar": "https://www.krock.com.au/wp-content/uploads/sites/32/2024/02/20240222-Russell-Crowe-Looks-Unrecognisable-Feature.jpg"
+        },
+        {
+          "name": "Joaquin Phoenix",
+          "avatar": "https://vegnews.com/media/W1siZiIsIjIwMTg2L1ZlZ05ld3MuSm9hcXVpblBob2VuaXguUmljY2FyZG9HaGlsYXJkaS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.JoaquinPhoenix.RiccardoGhilardi.jpg?sha=dd55693fceed3c4f"
+        },
+        {
+          "name": "Connie Nielsen",
+          "avatar": "https://facts.net/wp-content/uploads/2023/07/43-facts-about-connie-nielsen-1690563499.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "recommended",
+      "text": "Gladiator is a 2000 historical epic film directed by Ridley Scott and written by David Franzoni, John Logan, and William Nicholson. It stars Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed, Derek Jacobi, Djimon Hounsou and Richard Harris.[a]Crowe portrays the Roman general Maximus Decimus Meridius, who is betrayed when Commodus, the ambitious son of Emperor Marcus Aurelius, murders his father and seizes the throne. Reduced to slavery, Maximus becomes a gladiator and rises through the ranks of the arena, determined to avenge the murders of his family and the emperor. ",
+      "image": "https://wallpapercat.com/w/full/3/c/0/42749-1920x1080-desktop-1080p-gladiator-wallpaper-photo.jpg",
+      "color": "#b1b1b1",
+      "btnColor": "#9b9b9b"
+    },
+    {
+      "id": 7,
+      "name": "Joker",
+      "cast": [
+        {
+          "name": "Joaquin Phoenix",
+          "avatar": "https://vegnews.com/media/W1siZiIsIjIwMTg2L1ZlZ05ld3MuSm9hcXVpblBob2VuaXguUmljY2FyZG9HaGlsYXJkaS5qcGciXSxbInAiLCJ0aHVtYiIsIjE2MDB4OTQ2IyIseyJmb3JtYXQiOiJqcGcifV0sWyJwIiwib3B0aW1pemUiXV0/VegNews.JoaquinPhoenix.RiccardoGhilardi.jpg?sha=dd55693fceed3c4f"
+        },
+        {
+          "name": "Robert De Niro",
+          "avatar": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1256749551.jpeg?c=16x9&q=h_833,w_1480,c_fill"
+        },
+        {
+          "name": "Zazie Beetz",
+          "avatar": "https://bgn2018media.s3.amazonaws.com/wp-content/uploads/2018/03/28202108/zazie-beetz.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "recommended",
+      "text": "Joker is a 2019 American psychological thriller film[4] directed and co-produced by Todd Phillips from a screenplay he wrote with Scott Silver. The film, loosely based on DC Comics characters, stars Joaquin Phoenix as the Joker. Set in 1981, it follows Arthur Fleck, a failed clown and aspiring stand-up comedian whose descent into mental illness and nihilism inspires a violent countercultural revolution against the wealthy in a decaying Gotham City. Robert De Niro, Zazie Beetz, and Frances Conroy appear in supporting roles. Distributed by Warner Bros. Pictures, Joker was produced by Warner Bros. Pictures and DC Films in association with Village Roadshow Pictures, Bron Creative and Joint Effort. ",
+      "image": "https://w0.peakpx.com/wallpaper/708/303/HD-wallpaper-joker-2019-movie-new-joker-movie-joker-2019-movies-movies-joaquin-phoenix-poster.jpg",
+      "color": "#531313",
+      "btnColor": "#9e6244"
+    },
+    {
+      "id": 8,
+      "name": "zootopia",
+      "cast": [
+        {
+          "name": "Shakira",
+          "avatar": "https://ichef.bbci.co.uk/news/976/cpsprodpb/738B/production/_116497592_gettyimages-971720370.jpg"
+        },
+        {
+          "name": "Ginnifer Goodwin",
+          "avatar": "https://www.oklahoman.com/gcdn/authoring/2011/05/03/NOKL/ghnewsok-OK-3564403-946616b8.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp"
+        },
+        {
+          "name": "Jason Bateman",
+          "avatar": "https://variety.com/wp-content/uploads/2022/05/Jason-Bateman-Variety-Emmy-Awards-Season-Ozark.jpg"
+        }
+      ],
+      "genre": "animation",
+      "type": "trend",
+      "text": "Zootopia (titled Zootropolis or Zoomania in various regions)[b] is a 2016 American animated buddy cop action comedy film[6][7] produced by Walt Disney Animation Studios and released by Walt Disney Pictures. It was directed by Byron Howard and Rich Moore, co-directed by Jared Bush (in his feature directorial debut), and produced by Clark Spencer, from a screenplay written by Bush and Phil Johnston, and a story by Howard, Moore, Bush, Johnston, Jim Reardon, Josie Trinidad, and Jennifer Lee. The film stars the voices of Ginnifer Goodwin, Jason Bateman, Idris Elba, Jenny Slate, Nate Torrence, Bonnie Hunt, Don Lake, Tommy Chong, J. K. Simmons, Octavia Spencer, Alan Tudyk, and Shakira. Taking place in the titular city where anthropomorphic mammals coexist, it tells a story of an unlikely partnership between a rabbit police officer and a fox con artist as they uncover a criminal conspiracy involving the disappearance of some of its predatory citizens. ",
+      "image": "https://wallpapercave.com/wp/wp2112741.jpg",
+      "color": "#ff9043",
+      "btnColor": "#f16300"
+    },
+    {
+      "id": 9,
+      "name": "Frozen",
+      "cast": [
+        {
+          "name": "Kristen Bell",
+          "avatar": "https://hollywoodlife.com/wp-content/uploads/2013/06/kristen-bell-bio-photo.jpg?fit=620%2C349"
+        },
+        {
+          "name": "Idina Menzel",
+          "avatar": "https://images.ctfassets.net/6pezt69ih962/5bCtD1IKMRgRaPUZZf7yGV/b587195a0634f168f5e959140da34b1b/idina_menzel-1200x600-NYTG.jpg?h=550&fm=webp&q=90"
+        },
+        {
+          "name": "Josh Gad",
+          "avatar": "https://facts.net/wp-content/uploads/2023/07/49-facts-about-josh-gad-1690731479.jpg"
+        }
+      ],
+      "genre": "animation",
+      "type": "trend",
+      "text": "Frozen is a 2013 American animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures.[8] Inspired by Hans Christian Andersen's 1844 fairy tale The Snow Queen,[1] it was directed by Chris Buck and Jennifer Lee (in her feature directorial debut) and produced by Peter Del Vecho, from a screenplay by Lee, who also conceived the film's story with Buck and Shane Morris.The film stars the voices of Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad and Santino Fontana, with Alan Tudyk, Ciarán Hinds, Maia Wilson, Chris Williams, Stephen J. Anderson, Paul Briggs, Livvy Stubenrauch, Eva Bella, Maurice LaMarche, and Lee in supporting roles. The film follows Anna, the princess of Arendelle, who sets off on a journey with the iceman Kristoff, his reindeer Sven, and the snowman Olaf to find her estranged sister Elsa, whose icy powers have trapped their kingdom in eternal winter. ",
+      "image": "https://papers.co/wallpaper/papers.co-ac69-wallpaper-elsa-frozen-queen-disney-illust-snow-art-25-wallpaper.jpg",
+      "color": " #96eeff",
+      "btnColor": " #007bf5 "
+    },
+    {
+      "id": 10,
+      "name": "Shrek",
+      "cast": [
+        {
+          "name": "Mike Myers",
+          "avatar": "https://www.billboard.com/wp-content/uploads/media/Mike-Myers-nov-2014-a-billboard-1548.jpg"
+        },
+        {
+          "name": "Eddie Murphy",
+          "avatar": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2219,h_1248,x_0,y_589/c_fill,w_752,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01gwtnnpwp8zw4rh9rj2.jpg"
+        },
+        {
+          "name": "Conrad Vernon",
+          "avatar": "https://variety.com/wp-content/uploads/2016/09/conrad-vernon-toxic-avenger.jpg?w=1000&h=563&crop=1"
+        }
+      ],
+      "genre": "animation",
+      "type": "recommended",
+      "text": "Shrek is a 2001 American animated fantasy comedy film loosely based on the 1990 children's picture book of the same name by William Steig. Directed by Andrew Adamson and Vicky Jenson (in their feature directorial debuts) and written by Ted Elliott, Terry Rossio, Joe Stillman, and Roger S. H. Schulman, it is the first installment in the Shrek film series. The film stars Mike Myers, Eddie Murphy, Cameron Diaz, and John Lithgow. In the film, an embittered ogre named Shrek (Myers) finds his home in the swamp overrun by fairy tale creatures banished by the obsessive ruler Lord Farquaad (Lithgow). With the help of Donkey (Murphy), Shrek makes a pact with Farquaad to rescue Princess Fiona (Diaz) in exchange for regaining control of his swamp. ",
+      "image": "https://wallpapercat.com/w/full/d/9/b/49117-1920x1080-desktop-1080p-shrek-background-photo.jpg",
+      "color": " #a5ff79",
+      "btnColor": " #55ff00 "
+    },
+    {
+      "id": 11,
+      "name": "Madagascar",
+      "cast": [
+        {
+          "name": "David Schwimmer",
+          "avatar": "https://facts.net/wp-content/uploads/2023/07/40-facts-about-david-schwimmer-1690797651.jpg"
+        },
+        {
+          "name": "Sacha Baron Cohen",
+          "avatar": "https://compote.slate.com/images/b484abd8-5ae6-47e3-bc4e-f80b31893b03.jpeg?crop=3529%2C2353%2Cx0%2Cy0"
+        },
+        {
+          "name": "Ben Stiller",
+          "avatar": "https://www.hollywoodreporter.com/wp-content/uploads/2022/06/GettyImages-1390413992.jpg?w=1296&h=730&crop=1"
+        }
+      ],
+      "genre": "animation",
+      "type": "recommended",
+      "text": "Madagascar is a 2005 American animated survival comedy film produced by DreamWorks Animation and PDI/DreamWorks, and distributed by DreamWorks Pictures.[2][1] The film was directed by Eric Darnell and Tom McGrath (in McGrath's feature directorial debut) and written by Darnell, McGrath, Mark Burton, and Billy Frolick. The film stars the voices of Ben Stiller, Chris Rock, David Schwimmer, and Jada Pinkett Smith. It centers around a group of animals from the Central Park Zoo who find themselves stranded on the island of Madagascar and must adjust to living in the wild. ",
+      "image": "https://www.syfy.com/sites/syfy/files/2024/04/madagascarescape2africa-keyart-show-tile-1920x1080.jpg",
+      "color": "#deff7e",
+      "btnColor": "#b7f503"
+    },
+    {
+      "id": 12,
+      "name": "Inside Out",
+      "cast": [
+        {
+          "name": "Richard Kind",
+          "avatar": "https://bucksco.today/wp-content/uploads/sites/6/2024/04/Richard-Kind.jpg"
+        },
+        {
+          "name": "Bill Hader",
+          "avatar": "https://prod-images.tcm.com/Master-Profile-Images/BillHader.jpg"
+        },
+        {
+          "name": "Lewis Black",
+          "avatar": "https://ogden_images.s3.amazonaws.com/www.fortwayne.com/images/2022/08/31154650/lewis3.jpg"
+        }
+      ],
+      "genre": "animation",
+      "type": "trend",
+      "text": "Inside Out is a 2015 American animated coming-of-age film produced by Pixar Animation Studios for Walt Disney Pictures. It was directed by Pete Docter from a screenplay he co-wrote with Meg LeFauve and Josh Cooley. The film stars the voices of Amy Poehler, Phyllis Smith, Richard Kind, Bill Hader, Lewis Black, Mindy Kaling, Kaitlyn Dias, Diane Lane, and Kyle MacLachlan. Inside Out follows the inner workings of the mind of Riley, a young girl who adapts to her family's relocation as five personified emotions administer her thoughts and actions. ",
+      "image": "https://wallpapercat.com/w/full/6/a/b/2121214-1920x1080-desktop-1080p-inside-out-background-image.jpg",
+      "color": " #ff9df9",
+      "btnColor": "#ff43f4"
+    },
+    {
+      "id": 12,
+      "name": "Indiana Jones",
+      "cast": [
+        {
+          "name": "Harrison Ford",
+          "avatar": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2023/06/1200/675/harrison-ford.jpg?ve=1&tl=1"
+        },
+        {
+          "name": "Mads Mikkelsen",
+          "avatar": "https://variety.com/wp-content/uploads/2020/04/Mads-Mikkelsen.jpg?w=1000&h=563&crop=1"
+        },
+        {
+          "name": "Phoebe Waller-Bridge",
+          "avatar": "https://deadline.com/wp-content/uploads/2021/04/Phoebe-Waller-Bridge-crop.jpg"
+        }
+      ],
+      "genre": "adventure",
+      "type": "trend",
+      "text": "Indiana Jones is an American media franchise consisting of five films and a prequel television series, along with games, comics, and tie-in novels, that depicts the adventures of Dr. Henry Walton Indiana Jones Jr. (portrayed in all films by Harrison Ford), a fictional professor of archaeology.The series began in 1981 with the film Raiders of the Lost Ark. In 1984, a prequel, Indiana Jones and the Temple of Doom, was released, and in 1989, a sequel, Indiana Jones and the Last Crusade. A fourth film followed in 2008, titled Indiana Jones and the Kingdom of the Crystal Skull. A fifth and final film, titled Indiana Jones and the Dial of Destiny, was theatrically released on June 30, 2023.[1][2] The series was created by George Lucas. The first four films were directed by Steven Spielberg, who worked closely with Lucas during their production, while the fifth film was directed by James Mangold. In 1992, the franchise expanded to a television series with The Young Indiana Jones Chronicles, exploring the character in his childhood and youth, and including adventures with his parents. ",
+      "image": "https://wallup.net/wp-content/uploads/2019/10/102082-indiana-jones-kingdom-crystal-skull.jpg",
+      "color": "#e7e047",
+      "btnColor": "#cdc300"
+    },
+    {
+      "id": 13,
+      "name": "Rocky",
+      "cast": [
+        {
+          "name": "Sylvester Stallone",
+          "avatar": "https://cdn.aarp.net/content/dam/aarpe/en/home/entertainment/movies-for-grownups/info-2022/best-sylvester-stallone-movies/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/entertainment/movies-for-grownups/2022/10/1140-sylvester-stallone.jpg"
+        },
+        {
+          "name": "Carl Weathers",
+          "avatar": "https://ew.com/thmb/Z9KdRBEvgiNRM5qK_4AujRPzGQU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Carl-Weathers-020324-c86de03555d94bb28aaf296f21ce2122.jpg"
+        },
+        {
+          "name": "Talia Shire",
+          "avatar": "https://wallpapers.com/images/hd/young-american-actress-talia-shire-7ehycdtwf93xuzb5.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "recommended",
+      "text": "Rocky is a 1976 American sports drama film directed by John G. Avildsen and written by and starring Sylvester Stallone. It is the first installment in the Rocky franchise and also stars Talia Shire, Burt Young, Carl Weathers, and Burgess Meredith. In the film, Rocky Balboa (Stallone), a poor small-time club fighter and loanshark debt collector from Philadelphia, gets an unlikely shot at the world heavyweight championship held by Apollo Creed (Weathers).Rocky entered development in March 1975, after Stallone wrote the screenplay in three days. It entered a complicated production process after Stallone refused to allow the film to be made without him in the lead role; United Artists eventually agreed to cast Stallone after he rejected a six figure deal for the film rights. Principal photography began in January 1976, with filming primarily held in Philadelphia; several locations featured in the film, such as the Rocky Steps, are now considered cultural landmarks.[3] With an estimated production budget of under $1 million, Rocky popularized the rags to riches and American Dream themes of sports dramas which preceded the film. ",
+      "image": "https://wallpapercat.com/w/full/6/2/2/41631-1920x1080-desktop-1080p-rocky-wallpaper.jpg",
+      "color": "#939393",
+      "btnColor": "#ffffff"
+    },
+    {
+      "id": 14,
+      "name": "SpongeBob",
+      "cast": [
+        {
+          "name": "Tom Kenny",
+          "avatar": "https://castingfrontier.com/wp-content/uploads/2019/12/Screenshot-2022-12-07-at-7.16.10-PM.png"
+        },
+        {
+          "name": "Bill Fagerbakke",
+          "avatar": "https://television.mxdwn.com/wp-content/uploads/2015/06/bill-fagerbakke-babymakers-screening-2015-gi-1280x720.jpg"
+        },
+        {
+          "name": "doug lawrence ",
+          "avatar": "https://www.mycentraljersey.com/gcdn/-mm-/a906f5ee3e09b5348e2d2c85ef09754b9da153c1/c=0-0-5753-3250/local/-/media/2015/11/11/NJGroup/Bridgewater/635828539277547418-Doug-2.jpg"
+        }
+      ],
+      "genre": "animation",
+      "type": "series",
+      "text": "SpongeBob SquarePants is an American animated television series created by marine science educator and animator Stephen Hillenburg that first aired on Nickelodeon as a sneak peek after the 1999 Kids' Choice Awards on May 1, 1999, and officially premiered on July 17, 1999. It chronicles the adventures of the title character and his aquatic friends in the underwater city of Bikini Bottom. The series received worldwide critical acclaim, and had gained popularity by its second season. As of 2019, the series is the fifth-longest-running American animated series. Its popularity made it a multimedia franchise, the highest rated Nickelodeon series, and the most profitable intellectual property for Paramount Consumer Products. By 2019, it had generated over $13 billion in merchandising revenue",
+      "image": "https://w0.peakpx.com/wallpaper/6/1017/HD-wallpaper-spongebob-squarepants-battle-for-bikini-bottom-rehydrated.jpg",
+      "color": "#84cdff",
+      "btnColor": "#2ea9ff"
+    },
+    {
+      "id": 15,
+      "name": " Ben 10",
+      "cast": [
+        {
+          "name": "Greg Cipes",
+          "avatar": "https://facts.net/wp-content/uploads/2023/11/13-astonishing-facts-about-greg-cipes-1699608811.jpg"
+        },
+        {
+          "name": "Yuri Lowenthal",
+          "avatar": "https://www.looper.com/img/gallery/yuri-lowenthal-admits-fan-threats-made-him-nervous-to-voice-narutos-sasuke/l-intro-1673504513.jpg"
+        },
+        {
+          "name": "Ashley Johnson",
+          "avatar": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/09/Ashley-Johnson-Critical-Role.jpg"
+        }
+      ],
+      "genre": "animation",
+      "type": "series",
+      "text": "Ben 10 is an American media franchise conceived by Man of Action, produced by Cartoon Network Studios, and owned by Warner Bros. Entertainment. The franchise revolves around a young boy named Ben Tennyson, who discovers the Omnitrix — a high-tech, extraterrestrial device shaped like a wristwatch. This remarkable gadget contains the DNA of various alien species, allowing Ben to transform into them at will. Initially, the Omnitrix features ten alien transformations, but over time, Ben gains the ability to unlock additional species.The franchise has garnered considerable critical acclaim, securing three Emmy Awards. It encompasses five primary television series, five feature films, and numerous video games. It ranks as Cartoon Network's second longest existing franchise. Furthermore, Ben 10 has inspired a line of toys produced initially by Bandai for the franchise's first four series and later by Playmates Toys for the reboot. The Ben 10 franchise is one of the highest-grossing media franchises of all time. ",
+      "image": "https://w0.peakpx.com/wallpaper/673/503/HD-wallpaper-ben-10-alien-force.jpg",
+      "color": "#91ff8a",
+      "btnColor": "#48e43e"
+    },
+    {
+      "id": 16,
+      "name": "Stranger Things",
+      "cast": [
+        {
+          "name": "Millie Bobby Brown",
+          "avatar": "https://media.allure.com/photos/62583d6aa392bcd4c60a78c8/4:3/w_2664,h_1998,c_limit/Millie%20Bobby%20Brown%20Blonde%20Hair.jpg"
+        },
+        {
+          "name": "Noah Schnapp",
+          "avatar": "https://variety.com/wp-content/uploads/2023/10/Screen-Shot-2023-10-11-at-1.44.18-PM-1.png"
+        },
+        {
+          "name": "Sadie Sink",
+          "avatar": "https://www.comingsoon.net/wp-content/uploads/sites/3/2022/09/sadie-sink-header.png"
+        }
+      ],
+      "genre": "horror",
+      "type": "series",
+      "text": "Stranger Things is an American television series created by the Duffer Brothers for Netflix. Produced by Monkey Massacre Productions and 21 Laps Entertainment, the first season was released on Netflix on July 15, 2016. The second and third seasons followed in October 2017 and July 2019, respectively, and the fourth season was released in two parts in May and July 2022. The fifth and final season of Stranger Things is expected to be released in 2025. The show is known for its likeable cast of characters, plot, nostalgic tones, and mix of the horror, drama, science-fiction, mystery, and coming-of-age genres.Set in the 1980s, the series centers around the residents of the fictional small town of Hawkins, Indiana, as they are plagued by a hostile alternate dimension known as the Upside Down, after a nearby human experimentation facility opens a gateway between Earth and the Upside Down. The ensemble cast includes Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Cara Buono, Matthew Modine, Noah Schnapp, Sadie Sink, Joe Keery, Dacre Montgomery, Sean Astin, Paul Reiser, Maya Hawke, Priah Ferguson, Brett Gelman, Jamie Campbell Bower, Eduardo Franco, Joseph Quinn, and Amybeth McNulty. ",
+      "image": "https://wallpapercave.com/wp/wp2318777.jpg",
+      "color": " #818eb5",
+      "btnColor": "#5c86ff"
+    },
+    {
+      "id": 17,
+      "name": "From",
+      "cast": [
+        {
+          "name": "Harold Perrineau",
+          "avatar": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2023-05/harold-perrineau-lost-zz-230530-df96e7.jpg"
+        },
+        {
+          "name": "Hannah Cheramy",
+          "avatar": "https://comicbookscifi.com/wp-content/uploads/2024/09/Hannah-Cheramy.jpg"
+        },
+        {
+          "name": "Avery Konrad",
+          "avatar": "https://pophorror.com/wp-content/uploads/2022/03/avery-konrad-from-pop-culturalist-1024x579-1.jpg"
+        }
+      ],
+      "genre": "horror",
+      "type": "series",
+      "text": "From (stylized as FROM) is an American science fiction horror television series created by John Griffin. The first season premiered on February 20, 2022, on Epix. In April 2022, the series was renewed for a second season, which premiered on April 23, 2023, on the rebranded MGM+. In June 2023, the series was renewed for a third season that is set to premiere on September 22, 2024. ",
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/11490395f1d22c7199d36677cbaa3de4524d92034ba750ef6ebd57d50d6b7ebd.jpg",
+      "color": "#b39c75",
+      "btnColor": "#b8904c"
+    },
+    {
+      "id": 18,
+      "name": "Elite",
+      "cast": [
+        {
+          "name": "Ester Expósito",
+          "avatar": "https://deadline.com/wp-content/uploads/2024/08/Ester-Exposito.jpg"
+        },
+        {
+          "name": "Itzan Escamilla",
+          "avatar": "https://static.eldiario.es/clip/0f4696d0-d642-49ef-bb4f-e45c7fa423c9_16-9-discover-aspect-ratio_default_0.jpg"
+        },
+        {
+          "name": "María Pedraza",
+          "avatar": "https://img2.rtve.es/i/?w=1600&i=1611736824285.jpg"
+        }
+      ],
+      "genre": "adventure",
+      "type": "series",
+      "text": "Elite (Spanish: Élite) is a Spanish teen drama series created by Carlos Montero and Darío Madrona for Netflix. The show is set in Las Encinas, a fictional elite high school which caters to privileged and wealthy teenagers. Elite initially focuses on three working-class students who win their enrollment at Las Encinas through a scholarship program, and on the social and romantic interactions that they have with several students there. The series ran for eight seasons from 5 October 2018 to 26 July 2024.Though the series does have its share of light-hearted moments, Elite mainly centres around the trials and tribulations of its protagonists, exploring hot-button, progressive issues like homosexuality, classism, parental neglect, and illicit activities including drug use, crime and murder. ",
+      "image": "https://wallpapercat.com/w/full/4/e/4/2425853-1920x1080-desktop-1080p-elite-tv-series-background-image.jpg",
+      "color": " #ff8a8a",
+      "btnColor": "#ff3838"
+    },
+    {
+      "id": 19,
+      "name": "Money Heist",
+      "cast": [
+        {
+          "name": "Álvaro Morte",
+          "avatar": "https://miro.medium.com/v2/resize:fit:1200/1*pNFjU4Gro-5pJVWBP2lrCA.jpeg"
+        },
+        {
+          "name": "Úrsula Corberó",
+          "avatar": "https://cdn01.justjared.com/wp-content/uploads/2024/08/ursula-jockey/ursula-corbero-el-jockey-venice-film-festival-09.jpg"
+        },
+        {
+          "name": "Pedro Alonso",
+          "avatar": "https://variety.com/wp-content/uploads/2018/11/pedro-alonso1.jpg"
+        }
+      ],
+      "genre": "action",
+      "type": "series",
+      "text": "Money Heist (Spanish: La casa de papel, [la ˈkasa ðe paˈpel], lit. 'The House of Paper') is a Spanish heist crime drama television series created by Álex Pina. The series traces two long-prepared heists led by the Professor (Álvaro Morte), one on the Royal Mint of Spain, and one on the Bank of Spain, told from the perspective of one of the robbers, Tokyo (Úrsula Corberó). The story is told in a real-time-like fashion and relies on an unreliable narrator, flashbacks, time-jumps, and hidden character motivations for complexity.[2][3][4]The series was initially intended as a limited series to be told in two parts. It had its original run of 15 episodes on Spanish network Antena 3 from 2 May 2017 through 23 November 2017. Netflix acquired global streaming rights in late 2017. It re-cut the series into 22 shorter episodes and released them worldwide, beginning with the first part on 20 December 2017, followed by the second part on 6 April 2018. In April 2018, Netflix renewed the series with a significantly increased budget for 16 new episodes total. Part 3, with eight episodes, was released on 19 July 2019. Part 4, also with eight episodes, was released on 3 April 2020. A documentary involving the producers and the cast premiered on Netflix the same day, titled Money Heist: The Phenomenon (Spanish: La casa de papel: El Fenómeno). In July 2020, Netflix renewed the show for a fifth and final part, which was released in two five-episode volumes on 3 September and 3 December 2021, respectively. ",
+      "image": "https://i.redd.it/lzf0pjbttw351.jpg",
+      "color": "#995e5e",
+      "btnColor": "#a53131"
+    },
+    {
+      "id": 20,
+      "name": "The 100",
+      "cast": [
+        {
+          "name": "Eliza Taylor",
+          "avatar": "https://images2.minutemediacdn.com/image/upload/c_crop,w_2192,h_1233,x_0,y_164/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/363/01hqffv6cgj5xs16hfj1.jpg"
+        },
+        {
+          "name": "Bob Morley",
+          "avatar": "https://people.com/thmb/Az_fcrUXTNeJ_5u_t57YEA0ajvU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(772x268:774x270)/Bob-Morley-070824-tout-117988486a744cb19b51219d6a84a428.jpg"
+        },
+        {
+          "name": "Marie Avgeropoulos",
+          "avatar": "https://w0.peakpx.com/wallpaper/328/399/HD-wallpaper-marie-avgeropoulos-canadian-actress-beautiful-woman-portrait-makeup-beautiful-eyes.jpg"
+        }
+      ],
+      "genre": "adventure",
+      "type": "series",
+      "text": "The 100 (pronounced The Hundred [2]) is an American post-apocalyptic science fiction drama television series that premiered on March 19, 2014, on The CW, and ended on September 30, 2020. Developed by Jason Rothenberg, the series is loosely based on the young adult novel series of the same name by Kass Morgan.[3] The 100 follows post-apocalyptic survivors from a space habitat, the Ark, who return to Earth nearly a century after a devastating nuclear apocalypse. The first people sent to Earth are a group of juvenile delinquents who encounter descendants of survivors of the nuclear disaster on the ground.The juvenile delinquents include Clarke Griffin (Eliza Taylor), Finn Collins (Thomas McDonell), Bellamy Blake (Bob Morley), Octavia Blake (Marie Avgeropoulos), Jasper Jordan (Devon Bostick), Monty Green (Christopher Larkin), and John Murphy (Richard Harmon). Other lead characters include Clarke's mother Dr. Abby Griffin (Paige Turco), Marcus Kane (Henry Ian Cusick), and Chancellor Thelonious Jaha (Isaiah Washington), all of whom are council members on the Ark, and Raven Reyes (Lindsey Morgan), a mechanic aboard the Ark. ",
+      "image": "https://lezwatchtv.com/wp-content/uploads/2016/03/Cast-of-The-100-the-100-tv-show-37904770-1920-1080.jpg",
+      "color": " #496d91",
+      "btnColor": "#285e95"
+    },
+    {
+      "id": 21,
+      "name": "Wednesday",
+      "cast": [
+        {
+          "name": "Jenna Ortega",
+          "avatar": "https://resize.prod.femina.ladmedia.fr/rblr/652,438/img/var/2024-09/1725617980_jenna-ortega-ne-veut-pas-d-une-james-bond-fe-minine.jpg"
+        },
+        {
+          "name": "Emma Myers",
+          "avatar": "https://www.nickiswift.com/img/gallery/emma-myers-how-the-newest-it-girl-made-it-in-hollywood/emma-myers-hopes-to-explore-other-roles-1673535159.jpg"
+        },
+        {
+          "name": "Percy Hynes White",
+          "avatar": "https://static1.moviewebimages.com/wordpress/wp-content/uploads/2023/09/percy-hynes-white.jpg"
+        }
+      ],
+      "genre": "horror",
+      "type": "series",
+      "text": "Wednesday is an American coming-of-age supernatural mystery television series based on the character Wednesday Addams by Charles Addams. Created by Alfred Gough and Miles Millar, it stars Jenna Ortega as the titular character, with Gwendoline Christie, Riki Lindhome, Jamie McShane, Hunter Doohan, Percy Hynes White, Emma Myers, Joy Sunday, Georgie Farmer, Naomi J. Ogawa, Christina Ricci, and Moosa Mostafa appearing in supporting roles. Four out of the eight episodes of the first season were directed by Tim Burton, who also serves as executive producer. It revolves around Wednesday Addams, who attempts to solve a murder mystery at her new school.[2]Burton was previously approached to direct the 1991 film The Addams Family and was involved with a cancelled stop-motion animated The Addams Family film. In October 2020, he was reported to be helming a television series, which was later given a series order by Netflix. Ortega was cast in part to represent the character's Latina heritage. Ricci, who had played the titular character in the 1991 film and its 1993 sequel Addams Family Values, was asked by Burton to join the series in a supporting role. Filming took place in Romania between September 2021 and March 2022. ",
+      "image": "https://wallpapercave.com/wp/wp11755847.jpg",
+      "color": "#8844f8",
+      "btnColor": "#7b2bff"
+    },
+    {
+      "id": 22,
+      "name": "The Witcher",
+      "cast": [
+        {
+          "name": "Henry Cavill",
+          "avatar": "https://ca-times.brightspotcdn.com/dims4/default/31f0da9/2147483647/strip/true/crop/2836x2000+0+0/resize/1200x846!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fdc%2F61%2Fc19d543f43a8b6634e43ae19d377%2Ffilm-superman-11403.jpg"
+        },
+        {
+          "name": "Anya Chalotra",
+          "avatar": "https://d1nslcd7m2225b.cloudfront.net/Pictures/1024x536/2/9/6/1332296_anyachalotra_sot2020_2000x1333_creditpetersearle_9491.jpg"
+        },
+        {
+          "name": "Freya Allan",
+          "avatar": "https://vz.cnwimg.com/thumb-900x/wp-content/uploads/2022/06/Freya-Allan.jpg"
+        }
+      ],
+      "genre": "adventure",
+      "type": "series",
+      "text": "The Witcher is a fantasy drama television series created by Lauren Schmidt Hissrich for Netflix. It is based on the book series[a] by Polish author Andrzej Sapkowski. Set on a fictional, medieval-inspired landmass known as the Continent, The Witcher explores the legend of Geralt of Rivia, Yennefer of Vengerberg and Princess Ciri. It stars Henry Cavill, Anya Chalotra, and Freya Allan.The first season, consisting of eight episodes, was released on Netflix on December 20, 2019. It was based on The Last Wish and Sword of Destiny, which are collections of short stories that precede the main The Witcher saga. The second season, also consisting of eight episodes and based on the novel Blood of Elves, was released on December 17, 2021. In September 2021, Netflix renewed the series for a third season, which also consists of eight episodes, released in two volumes on June 29 and July 27, 2023. This will be followed by a fourth season, with Liam Hemsworth taking over the role of Geralt of Rivia. In April 2024, the series was renewed for its fifth and final season. ",
+      "image": "https://images.wallpapersden.com/image/download/the-witcher-fan-art_a2xsZW2UmZqaraWkpJRmbmdlrWZlbWU.jpg",
+      "color": "#cbcbcb ",
+      "btnColor": "#a4a4a4"
+    }
+  ]
+}
