@@ -1,5 +1,6 @@
 {
   "name": "netflix-app",
+  "main": "server.js",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +10,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohammad-reza-zeydani/typescript-react-netflix-app.git"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.52.1",
