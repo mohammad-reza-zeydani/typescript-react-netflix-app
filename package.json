@@ -13,6 +13,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.52.1",
     "@types/aos": "^3.0.7",
+    "@types/json-server": "^0.14.7",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.7.5",
     "json-server": "^1.0.0-beta.2",
