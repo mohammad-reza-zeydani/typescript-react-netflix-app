@@ -8,8 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "node server.js "
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
