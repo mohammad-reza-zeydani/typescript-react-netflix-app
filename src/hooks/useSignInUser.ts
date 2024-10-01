@@ -5,7 +5,7 @@ const useSignInUser = () => {
     // post the user that want to signIn
     const {mutate}=useMutation({
         mutationFn:async(user:TUserData)=>{
-            const response=await axios.post('http://localhost:3000/signIn/',user)
+            const response=await axios.post('https://servernetflix.onrender.com/signIn/',user)
             return response.data
         },
     })

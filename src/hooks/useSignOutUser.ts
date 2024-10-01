@@ -4,7 +4,7 @@ const useSignOutUser = () => {
     const {mutate}=useMutation({
         // delete the user that want to signOut
         mutationFn:async(user:number)=>{
-            const response=await axios.delete(`http://localhost:3000/signIn/${user}`)
+            const response=await axios.delete(`https://servernetflix.onrender.com/signIn/${user}`)
             return response.data
         },
     })

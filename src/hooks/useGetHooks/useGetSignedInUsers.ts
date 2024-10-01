@@ -5,7 +5,7 @@ const useGetSignedInUsers = () => {
     const {data,isError,isLoading,error}=useQuery({
         queryKey:["signedIn"],
         queryFn:async()=>{
-            const response=await axios.get("http://localhost:3000/signIn")
+            const response=await axios.get("https://servernetflix.onrender.com/signIn")
             return response.data
         }
     })

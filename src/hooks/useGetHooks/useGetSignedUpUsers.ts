@@ -5,7 +5,7 @@ const useGetSignedUpUsers = () => {
     const {data,isLoading,isError,error}=useQuery({
         queryKey:["signedUp"],
         queryFn:async()=>{
-            const response=await axios.get("http://localhost:3000/signUp")
+            const response=await axios.get("https://servernetflix.onrender.com/signUp")
             return response.data
         }
     })
