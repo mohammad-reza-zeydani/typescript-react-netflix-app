@@ -37,13 +37,8 @@ const Navigation = () => {
             })}
           </select>
           {token ? (
-            // show dashboard and signOut links if there is token
+            // signOut links if there is token
             <>
-              <Link
-                to={"/netflixDashboard"}
-                className='header-links font-serif'>
-                Dashboard
-              </Link>
               <Link to={"/sign_out"} className='header-links font-serif'>
                 Sign Out
               </Link>
@@ -54,6 +49,11 @@ const Navigation = () => {
               Sign In
             </Link>
           )}
+              <Link
+                to={"/netflixDashboard"}
+                className='header-links font-serif'>
+                Dashboard
+              </Link>
         </div>
       </section>
       {/* navigation body section*/}
@@ -78,7 +78,7 @@ const Navigation = () => {
             placeholder='Email address'
           />
           <Link
-            to={"/sign_up"}
+            to={"/sign_in"}
             className='flex items-center justify-center font-extralight bg-red-700 active-btn'>
             <div>Get Started</div>
           </Link>

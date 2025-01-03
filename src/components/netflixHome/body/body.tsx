@@ -70,7 +70,7 @@ const Body = () => {
           />
           {/* this link lead us to sign_up page */}
           <Link
-            to={"/sign_up"}
+            to={"/sign_in"}
             className='block bg-red-700 px-4 py-2 rounded-md active-btn sm:text-lg font-extralight'>
             Get Started
           </Link>

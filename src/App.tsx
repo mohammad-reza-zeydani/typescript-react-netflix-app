@@ -1,6 +1,5 @@
 import Home from "./components/netflixHome/home";
 import SignIn from "./components/signIn&signUp&signOut/signIn";
-import SignUp from "./components/signIn&signUp&signOut/signUp";
 import SignOUt from "./components/signIn&signUp&signOut/signOut";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/netflixHome/footer/footer";
@@ -21,20 +20,19 @@ function App() {
       <Routes>
         {/* private routes  */}
         <Route element={<PrivateRoutes />}>
-          <Route path='/netflixDashboard' element={<NetFlixDashBoard />} />
           <Route path='/sign_out' element={<SignOUt />} />
-          <Route path='/informaiton/:id' element={<MoreInfo />} />
-          <Route path='/markedMoviesPage' element={<MarkedMovies />} />
-          <Route path='/action' element={<Action />} />
-          <Route path='/adventure' element={<Adventure />} />
-          <Route path='/horror' element={<Horror />} />
-          <Route path='/animation' element={<Animation />} />
         </Route>
         {/* non private routes */}
+        <Route path='/netflixDashboard' element={<NetFlixDashBoard />} />
         <Route path='/' element={<Home />} />
-        <Route path='/sign_up' element={<SignUp />} />
         <Route path='/sign_in' element={<SignIn />} />
         <Route path='*' element={<NotFoundPage />} />
+        <Route path='/informaiton/:id' element={<MoreInfo />} />
+        <Route path='/markedMoviesPage' element={<MarkedMovies />} />
+        <Route path='/action' element={<Action />} />
+        <Route path='/adventure' element={<Adventure />} />
+        <Route path='/horror' element={<Horror />} />
+        <Route path='/animation' element={<Animation />} />
       </Routes>
       {/* footer input that i want to be appeard under all of my pages */}
       <Footer />
