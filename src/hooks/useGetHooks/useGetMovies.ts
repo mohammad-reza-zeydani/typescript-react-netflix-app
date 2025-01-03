@@ -6,7 +6,7 @@ const useGetMovies = (search?:string) => {
         queryKey:["movies",search],
         queryFn:async({queryKey})=>{
             const searchResult=queryKey[1] as string
-            const response=await axios.get(`https://servernetflix.onrender.com/movies?name_like=${searchResult ||""}`)
+            const response=await axios.get(`https://netflix-server-bjza.onrender.com/movies?name_like=${searchResult ||""}`)
             return response.data 
         }
     })

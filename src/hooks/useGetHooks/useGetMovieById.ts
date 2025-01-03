@@ -5,7 +5,7 @@ const useGetMovieById = (id:string | undefined) => {
     const {data,isError,isLoading,error}=useQuery({
         queryKey:["movieId",id],
         queryFn:async()=>{
-            const response=await axios.get(`https://servernetflix.onrender.com/movies/${id}`)
+            const response=await axios.get(`https://netflix-server-bjza.onrender.com/movies/${id}`)
             return response.data 
         },
     })
