@@ -31,7 +31,7 @@ const SignIn = () => {
           register={register}
           errors={errors}
           title={"Sign In"}
-          link='/sign_up'
+          link='/'
           text='netflix'
           linkText='home page'
         />
